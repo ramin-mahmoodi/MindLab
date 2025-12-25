@@ -25,6 +25,7 @@ import cage from './cage.json';
 import dast10 from './dast-10.json';
 import qidsSr from './qids-sr.json';
 import psqi from './psqi.json';
+import scl90r from './scl-90-r.json';
 
 // Type definitions
 export interface TestOption {
@@ -89,10 +90,11 @@ export interface TestDefinition {
     risk_rules: RiskRule[];
 }
 
-// Export all test definitions (23 tests total)
+// Export all test definitions (24 tests total)
 export const TEST_DEFINITIONS: TestDefinition[] = [
     // General Screening
     ghq12 as TestDefinition,
+    scl90r as TestDefinition,
 
     // Depression
     phq9 as TestDefinition,

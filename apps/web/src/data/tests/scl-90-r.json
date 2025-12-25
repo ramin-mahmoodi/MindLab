@@ -1,0 +1,1474 @@
+{
+    "slug": "scl-90-r",
+    "name": "Symptom Checklist 90 Revised",
+    "nameFa": "چک‌لیست علائم ۹۰ سؤالی (SCL-90-R)",
+    "category": "General",
+    "categoryFa": "غربالگری عمومی",
+    "description": "A comprehensive self-report symptom inventory covering a wide range of psychological problems.",
+    "descriptionFa": "پرسشنامه جامع خودگزارشی برای ارزیابی طیف وسیعی از مشکلات روان‌شناختی.",
+    "analysis_type": "profile",
+    "warning": "این تست جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 20,
+    "scales": [
+        {
+            "key": "som",
+            "name": "Somatization",
+            "nameFa": "شکایات جسمانی"
+        },
+        {
+            "key": "oc",
+            "name": "Obsessive-Compulsive",
+            "nameFa": "وسواس فکری-عملی"
+        },
+        {
+            "key": "is",
+            "name": "Interpersonal Sensitivity",
+            "nameFa": "حساسیت بین‌فردی"
+        },
+        {
+            "key": "dep",
+            "name": "Depression",
+            "nameFa": "افسردگی"
+        },
+        {
+            "key": "anx",
+            "name": "Anxiety",
+            "nameFa": "اضطراب"
+        },
+        {
+            "key": "hos",
+            "name": "Hostility",
+            "nameFa": "خصومت"
+        },
+        {
+            "key": "phob",
+            "name": "Phobic Anxiety",
+            "nameFa": "ترس مرضی"
+        },
+        {
+            "key": "par",
+            "name": "Paranoid Ideation",
+            "nameFa": "افکار پارانوئید"
+        },
+        {
+            "key": "psy",
+            "name": "Psychoticism",
+            "nameFa": "روان‌پریشی"
+        },
+        {
+            "key": "gsi",
+            "name": "Global Severity Index",
+            "nameFa": "شاخص شدت کلی"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "سردرد",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "عصبانیت یا لرزش درونی",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "افکار ناخواسته تکراری که از ذهن خارج نمی‌شوند",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "ضعف یا سرگیجه",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "کاهش علاقه یا لذت جنسی",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "انتقاد از دیگران",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "احساس اینکه شخص دیگری افکار شما را کنترل می‌کند",
+            "scaleKey": "psy",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "احساس اینکه دیگران مسئول مشکلات شما هستند",
+            "scaleKey": "par",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "مشکل در به یاد آوردن چیزها",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "نگرانی درباره بی‌دقتی یا کثیفی",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "زود عصبانی شدن یا آزرده شدن",
+            "scaleKey": "hos",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "درد در قلب یا قفسه سینه",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "ترس در فضاهای باز یا خیابان",
+            "scaleKey": "phob",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "احساس کم‌انرژی یا آهسته بودن",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "افکار پایان دادن به زندگی",
+            "scaleKey": "dep",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "شنیدن صداهایی که دیگران نمی‌شنوند",
+            "scaleKey": "psy",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "لرزش بدن",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "احساس اینکه نباید به اکثر افراد اعتماد کرد",
+            "scaleKey": "par",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "اشتهای ضعیف",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "گریه آسان",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "خجالت یا ناراحتی با جنس مخالف",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "احساس به دام افتادن یا گیر کردن",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "ناگهان ترسیدن بدون دلیل",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "عصبانیت‌های غیرقابل کنترل",
+            "scaleKey": "hos",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 25,
+            "text": "ترس از بیرون رفتن از خانه تنها",
+            "scaleKey": "phob",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 26,
+            "text": "سرزنش خود برای چیزها",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 27,
+            "text": "درد کمر",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 28,
+            "text": "احساس ناتوانی در انجام کارها",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 29,
+            "text": "احساس تنهایی",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 30,
+            "text": "احساس غمگینی",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 31,
+            "text": "نگرانی بیش از حد درباره چیزها",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 32,
+            "text": "بی‌علاقگی به چیزها",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 33,
+            "text": "احساس ترس",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 34,
+            "text": "زود رنجیده شدن احساسات",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 35,
+            "text": "احساس اینکه دیگران افکار خصوصی شما را می‌دانند",
+            "scaleKey": "psy",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 36,
+            "text": "احساس اینکه دیگران شما را درک نمی‌کنند",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 37,
+            "text": "احساس اینکه مردم غیردوستانه هستند یا شما را دوست ندارند",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 38,
+            "text": "مجبور بودن به انجام کارها خیلی آهسته برای اطمینان از درستی",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 39,
+            "text": "تپش قلب یا تند شدن ضربان قلب",
+            "scaleKey": "anx",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 40,
+            "text": "حالت تهوع یا ناراحتی معده",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 41,
+            "text": "احساس حقارت نسبت به دیگران",
+            "scaleKey": "is",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 42,
+            "text": "درد عضلات",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 43,
+            "text": "احساس اینکه نگاهتان می‌کنند یا درباره‌تان صحبت می‌کنند",
+            "scaleKey": "par",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 44,
+            "text": "مشکل در به خواب رفتن",
+            "scaleKey": "dep",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 45,
+            "text": "نیاز به بررسی مکرر کارها",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 46,
+            "text": "مشکل در تصمیم‌گیری",
+            "scaleKey": "oc",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 47,
+            "text": "ترس از سفر با اتوبوس، مترو یا قطار",
+            "scaleKey": "phob",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 48,
+            "text": "مشکل در تنفس",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 49,
+            "text": "گرگرفتگی یا سردی ناگهانی",
+            "scaleKey": "som",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 50,
+            "text": "نیاز به اجتناب از چیزها یا فعالیت‌های خاص به دلیل ترس",
+            "scaleKey": "phob",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "gsi",
+            "min": 0,
+            "max": 0.99,
+            "label": "Normal",
+            "labelFa": "طبیعی"
+        },
+        {
+            "scaleKey": "gsi",
+            "min": 1,
+            "max": 1.99,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "gsi",
+            "min": 2,
+            "max": 2.99,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "gsi",
+            "min": 3,
+            "max": 4,
+            "label": "Severe",
+            "labelFa": "شدید"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "gsi",
+            "title": "بدون علائم قابل توجه",
+            "summary": "شاخص شدت کلی شما در محدوده طبیعی است.",
+            "details": "علائم روان‌شناختی شما در حد نرمال است.",
+            "recommendations": "ادامه دادن به فعالیت‌های سلامت روان.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "gsi",
+            "title": "علائم شدید روان‌شناختی",
+            "summary": "شاخص شدت کلی شما بالا است و نیاز به توجه دارد.",
+            "details": "این نشان‌دهنده وجود مشکلات روان‌شناختی قابل توجه است.",
+            "recommendations": "مراجعه فوری به روان‌پزشک یا روان‌شناس توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": [
+        {
+            "condition": "q15 >= 2",
+            "message": "⚠️ شما افکار پایان دادن به زندگی گزارش کرده‌اید. لطفاً فوراً با خط اورژانس اجتماعی ۱۲۳ تماس بگیرید.",
+            "severity": "emergency"
+        }
+    ]
+}
