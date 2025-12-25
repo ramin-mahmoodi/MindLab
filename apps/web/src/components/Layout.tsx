@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from './AuthContext';
+import { useLanguage } from './LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 import { logout } from '../lib/firebase';
 
 interface LayoutProps {
@@ -8,6 +10,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
     const { user, isAdmin } = useAuth();
+    const { t, isRTL } = useLanguage();
     const location = useLocation();
 
     const handleLogout = async () => {
@@ -28,7 +31,7 @@ export default function Layout({ children }: LayoutProps) {
                     <ul className="navbar-nav">
                         <li>
                             <Link to="/tests" className={`nav-link ${isActive('/tests')}`}>
-                                Tests
+                                {t('nav.tests')}
                             </Link>
                         </li>
 
@@ -36,31 +39,35 @@ export default function Layout({ children }: LayoutProps) {
                             <>
                                 <li>
                                     <Link to="/results" className={`nav-link ${isActive('/results')}`}>
-                                        Results
+                                        {t('nav.results')}
                                     </Link>
                                 </li>
 
                                 {isAdmin && (
                                     <li>
                                         <Link to="/admin" className={`nav-link ${location.pathname.startsWith('/admin') ? 'active' : ''}`}>
-                                            Admin
+                                            {t('nav.admin')}
                                         </Link>
                                     </li>
                                 )}
 
                                 <li>
                                     <button onClick={handleLogout} className="btn btn-secondary">
-                                        خروج
+                                        {t('nav.logout')}
                                     </button>
                                 </li>
                             </>
                         ) : (
                             <li>
                                 <Link to="/login" className="btn btn-primary">
-                                    ورود
+                                    {t('nav.login')}
                                 </Link>
                             </li>
                         )}
+
+                        <li>
+                            <LanguageSwitcher />
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -82,8 +89,8 @@ export default function Layout({ children }: LayoutProps) {
                         Mind<span style={{ color: 'var(--color-primary)' }}>Lab</span>
                     </span>
                 </div>
-                <p className="persian" style={{ marginBottom: 0, fontSize: '0.875rem' }}>
-                    ⚠️ تمامی تست‌های این سایت صرفاً جنبه آموزشی و غربالگری دارند و جایگزین تشخیص پزشکی نیستند.
+                <p style={{ marginBottom: 0, fontSize: '0.875rem', direction: isRTL ? 'rtl' : 'ltr' }}>
+                    ⚠️ {t('tests.disclaimer')}
                 </p>
                 <p style={{ marginBottom: 0, fontSize: '0.75rem', marginTop: '0.5rem', opacity: 0.6 }}>
                     © 2024 MindLab. Discover Your Psychology.
