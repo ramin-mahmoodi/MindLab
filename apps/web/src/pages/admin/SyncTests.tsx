@@ -3,21 +3,14 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../../components/AuthContext';
 
 interface SyncResult {
-    testsInserted: number;
-    testsUpdated: number;
-    scalesCreated: number;
-    questionsCreated: number;
-    optionsCreated: number;
-    cutoffsCreated: number;
-    templatesCreated: number;
-    riskRulesCreated: number;
-    categories: Record<string, number>;
+    testsProcessed: number;
     errors: string[];
 }
 
 export default function SyncTests() {
     const [syncing, setSyncing] = useState(false);
     const [result, setResult] = useState<SyncResult | null>(null);
+    const [message, setMessage] = useState('');
     const [error, setError] = useState('');
     const { user } = useAuth();
 
@@ -25,6 +18,7 @@ export default function SyncTests() {
         setSyncing(true);
         setError('');
         setResult(null);
+        setMessage('');
 
         try {
             const token = await user?.getIdToken();
@@ -42,6 +36,7 @@ export default function SyncTests() {
                 throw new Error(data.error || 'Sync failed');
             }
 
+            setMessage(data.message || 'Sync complete');
             setResult(data.result);
         } catch (err: any) {
             setError(err.message || 'Failed to sync tests');
@@ -71,7 +66,6 @@ export default function SyncTests() {
                     <ul style={{ margin: '0.5rem 0 0 0', paddingRight: '1.5rem' }}>
                         <li>تست‌ها از فایل‌های JSON داخل پروژه خوانده می‌شوند</li>
                         <li>تست‌های موجود بر اساس slug آپدیت می‌شوند</li>
-                        <li>تست‌های جدید اضافه می‌شوند</li>
                         <li>سوالات، گزینه‌ها، cutoffs و templates همه sync می‌شوند</li>
                     </ul>
                 </div>
@@ -107,86 +101,36 @@ export default function SyncTests() {
                 </button>
             </div>
 
+            {message && (
+                <div className="alert alert-success" style={{ marginTop: '1rem' }}>
+                    <span className="alert-icon">✅</span>
+                    <span>{message}</span>
+                </div>
+            )}
+
             {result && (
                 <div className="card" style={{ marginTop: '1.5rem' }}>
                     <h3 style={{ marginBottom: '1rem' }}>✅ Sync Complete</h3>
 
-                    <div className="grid grid-4" style={{ gap: '1rem', marginBottom: '1.5rem' }}>
-                        <div style={{
-                            background: 'var(--color-bg-tertiary)',
-                            padding: '1rem',
-                            borderRadius: 'var(--radius-lg)',
-                            textAlign: 'center'
-                        }}>
-                            <div className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                                {result.testsInserted}
-                            </div>
-                            <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Tests Added</div>
-                        </div>
-                        <div style={{
-                            background: 'var(--color-bg-tertiary)',
-                            padding: '1rem',
-                            borderRadius: 'var(--radius-lg)',
-                            textAlign: 'center'
-                        }}>
-                            <div className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                                {result.testsUpdated}
-                            </div>
-                            <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Tests Updated</div>
-                        </div>
-                        <div style={{
-                            background: 'var(--color-bg-tertiary)',
-                            padding: '1rem',
-                            borderRadius: 'var(--radius-lg)',
-                            textAlign: 'center'
-                        }}>
-                            <div className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                                {result.questionsCreated}
-                            </div>
-                            <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Questions</div>
-                        </div>
-                        <div style={{
-                            background: 'var(--color-bg-tertiary)',
-                            padding: '1rem',
-                            borderRadius: 'var(--radius-lg)',
-                            textAlign: 'center'
-                        }}>
-                            <div className="gradient-text" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-                                {result.templatesCreated}
-                            </div>
-                            <div style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Templates</div>
-                        </div>
-                    </div>
-
-                    <h4 style={{ marginBottom: '0.75rem' }}>Categories</h4>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
-                        {Object.entries(result.categories).map(([cat, count]) => (
-                            <span key={cat} className="category-badge">
-                                {cat}: {count}
-                            </span>
-                        ))}
-                    </div>
-
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(3, 1fr)',
-                        gap: '0.75rem',
-                        padding: '1rem',
                         background: 'var(--color-bg-tertiary)',
-                        borderRadius: 'var(--radius-lg)'
+                        padding: '1.5rem',
+                        borderRadius: 'var(--radius-lg)',
+                        textAlign: 'center',
+                        marginBottom: '1rem'
                     }}>
-                        <div>Scales: <strong>{result.scalesCreated}</strong></div>
-                        <div>Options: <strong>{result.optionsCreated}</strong></div>
-                        <div>Cutoffs: <strong>{result.cutoffsCreated}</strong></div>
-                        <div>Risk Rules: <strong>{result.riskRulesCreated}</strong></div>
+                        <div className="gradient-text" style={{ fontSize: '2.5rem', fontWeight: 700 }}>
+                            {result.testsProcessed}
+                        </div>
+                        <div style={{ fontSize: '1rem', color: 'var(--color-text-muted)' }}>Tests Synced</div>
                     </div>
 
-                    {result.errors.length > 0 && (
-                        <div className="alert alert-warning" style={{ marginTop: '1rem' }}>
+                    {result.errors && result.errors.length > 0 && (
+                        <div className="alert alert-warning">
                             <span className="alert-icon">⚠️</span>
                             <div>
-                                <strong>Errors:</strong>
-                                <ul style={{ margin: '0.5rem 0 0 1rem' }}>
+                                <strong>Errors ({result.errors.length}):</strong>
+                                <ul style={{ margin: '0.5rem 0 0 1rem', fontSize: '0.875rem' }}>
                                     {result.errors.map((err, i) => (
                                         <li key={i}>{err}</li>
                                     ))}
