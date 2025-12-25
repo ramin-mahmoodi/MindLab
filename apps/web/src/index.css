@@ -1007,30 +1007,90 @@ a:hover {
   color: var(--color-bg);
 }
 
-/* RTL Support */
+/* RTL Support - Global */
 html[dir="rtl"] {
   font-family: var(--font-persian);
 }
 
-html[dir="rtl"] .navbar-content {
-  flex-direction: row-reverse;
+html[dir="rtl"] body {
+  font-family: var(--font-persian);
+  text-align: right;
 }
 
-html[dir="rtl"] .navbar-nav {
-  flex-direction: row-reverse;
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: var(--font-persian);
+}
+
+/* RTL Layout */
+html[dir="rtl"] .container {
+  direction: rtl;
 }
 
 html[dir="rtl"] .page-header,
 html[dir="rtl"] .hero-content {
   direction: rtl;
+  text-align: center;
+}
+
+html[dir="rtl"] .card {
+  direction: rtl;
+  text-align: right;
 }
 
 html[dir="rtl"] .card p,
-html[dir="rtl"] .alert {
+html[dir="rtl"] .alert,
+html[dir="rtl"] p {
   direction: rtl;
   text-align: right;
 }
 
 html[dir="rtl"] .option-btn {
   text-align: right;
+}
+
+html[dir="rtl"] .btn {
+  font-family: var(--font-persian);
+}
+
+html[dir="rtl"] .form-input,
+html[dir="rtl"] .form-textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL Grid and Flex */
+html[dir="rtl"] .grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .navbar-brand {
+  flex-direction: row-reverse;
+}
+
+/* Alert RTL */
+html[dir="rtl"] .alert {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .alert-icon {
+  order: 1;
+}
+
+/* Success alert */
+.alert-success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: var(--color-success);
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--color-error);
 }
