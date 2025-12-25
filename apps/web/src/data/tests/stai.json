@@ -1,0 +1,573 @@
+{
+    "slug": "stai",
+    "name": "State-Trait Anxiety Inventory",
+    "nameFa": "پرسشنامه اضطراب حالت-صفت (STAI)",
+    "category": "Anxiety",
+    "categoryFa": "اضطراب",
+    "description": "A psychological inventory to measure anxiety as a transient state (S-Anxiety) and as a general trait (T-Anxiety).",
+    "descriptionFa": "پرسشنامه‌ای برای سنجش اضطراب به عنوان یک حالت گذرا و یک صفت پایدار شخصیتی.",
+    "analysis_type": "profile",
+    "warning": "این تست جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "state",
+            "name": "State Anxiety",
+            "nameFa": "اضطراب حالت"
+        },
+        {
+            "key": "trait",
+            "name": "Trait Anxiety",
+            "nameFa": "اضطراب صفت"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "من احساس آرامش می‌کنم",
+            "scaleKey": "state",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 3
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "من احساس امنیت می‌کنم",
+            "scaleKey": "state",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 3
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "من تنش دارم",
+            "scaleKey": "state",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "من احساس پشیمانی می‌کنم",
+            "scaleKey": "state",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "من احساس راحتی می‌کنم",
+            "scaleKey": "state",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 3
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "من ناراحت هستم",
+            "scaleKey": "state",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "نگران بدبختی‌های احتمالی هستم",
+            "scaleKey": "state",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "من احساس استراحت و آسودگی می‌کنم",
+            "scaleKey": "state",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 3
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "من مضطرب هستم",
+            "scaleKey": "state",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 2
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "من احساس آسایش می‌کنم",
+            "scaleKey": "state",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدی",
+                    "score": 3
+                },
+                {
+                    "text": "نسبتاً زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "عموماً احساس آرامش می‌کنم",
+            "scaleKey": "trait",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 4
+                },
+                {
+                    "text": "گاهی",
+                    "score": 3
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "به سرعت خسته می‌شوم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "احساس می‌کنم می‌خواهم گریه کنم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "کاش می‌توانستم به اندازه دیگران شاد باشم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "به خاطر تصمیم‌نگرفتن فرصت‌ها را از دست می‌دهم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "احساس آسودگی می‌کنم",
+            "scaleKey": "trait",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 4
+                },
+                {
+                    "text": "گاهی",
+                    "score": 3
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "خیلی نگران می‌شوم و ذهنم مشغول است",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "ناامیدی‌ها آنقدر اذیتم می‌کنند که نمی‌توانم فراموششان کنم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "آدم متعادلی هستم",
+            "scaleKey": "trait",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 4
+                },
+                {
+                    "text": "گاهی",
+                    "score": 3
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "وقتی به نگرانی‌هایم فکر می‌کنم تنش پیدا می‌کنم",
+            "scaleKey": "trait",
+            "options": [
+                {
+                    "text": "تقریباً هرگز",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "تقریباً همیشه",
+                    "score": 4
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "state",
+            "min": 10,
+            "max": 19,
+            "label": "Low",
+            "labelFa": "کم"
+        },
+        {
+            "scaleKey": "state",
+            "min": 20,
+            "max": 29,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "state",
+            "min": 30,
+            "max": 39,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "state",
+            "min": 40,
+            "max": 40,
+            "label": "High",
+            "labelFa": "زیاد"
+        },
+        {
+            "scaleKey": "trait",
+            "min": 10,
+            "max": 19,
+            "label": "Low",
+            "labelFa": "کم"
+        },
+        {
+            "scaleKey": "trait",
+            "min": 20,
+            "max": 29,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "trait",
+            "min": 30,
+            "max": 39,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "trait",
+            "min": 40,
+            "max": 40,
+            "label": "High",
+            "labelFa": "زیاد"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "state_low",
+            "scaleKey": "state",
+            "title": "اضطراب حالت کم",
+            "summary": "سطح اضطراب لحظه‌ای شما در محدوده طبیعی است.",
+            "details": "این یعنی در این لحظه احساس آرامش نسبی دارید.",
+            "recommendations": "ادامه دادن به فعالیت‌های آرام‌بخش توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "trait_high",
+            "scaleKey": "trait",
+            "title": "اضطراب صفت بالا",
+            "summary": "شما تمایل به تجربه اضطراب در موقعیت‌های مختلف دارید.",
+            "details": "اضطراب صفت یک ویژگی پایدار شخصیتی است که نشان‌دهنده آمادگی برای تجربه اضطراب است.",
+            "recommendations": "مشاوره با متخصص سلامت روان توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

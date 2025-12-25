@@ -1,0 +1,304 @@
+{
+    "slug": "epds",
+    "name": "Edinburgh Postnatal Depression Scale",
+    "nameFa": "مقیاس افسردگی پس از زایمان ادینبورگ (EPDS)",
+    "category": "Depression",
+    "categoryFa": "افسردگی",
+    "description": "A screening tool for postnatal depression in new mothers.",
+    "descriptionFa": "ابزار غربالگری افسردگی پس از زایمان در مادران.",
+    "analysis_type": "direct",
+    "warning": "اگر افکار آزاردهنده درباره آسیب به خود یا نوزاد دارید، فوراً با پزشک تماس بگیرید.",
+    "timeMinutes": 5,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "توانسته‌ام بخندم و جنبه شاد چیزها را ببینم",
+            "scaleKey": "total",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "به همان اندازه همیشه",
+                    "score": 0
+                },
+                {
+                    "text": "خیلی نه مثل قبل",
+                    "score": 1
+                },
+                {
+                    "text": "قطعاً نه به اندازه قبل",
+                    "score": 2
+                },
+                {
+                    "text": "اصلاً نه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "با شوق به چیزها نگاه کرده‌ام",
+            "scaleKey": "total",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "به همان اندازه همیشه",
+                    "score": 0
+                },
+                {
+                    "text": "کمتر از قبل",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی کمتر از قبل",
+                    "score": 2
+                },
+                {
+                    "text": "اصلاً",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "وقتی اوضاع بد پیش رفته، خودم را بی‌دلیل سرزنش کرده‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، اغلب اوقات",
+                    "score": 3
+                },
+                {
+                    "text": "بله، گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "نه خیلی",
+                    "score": 1
+                },
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "بدون دلیل خوبی مضطرب یا نگران بوده‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "به ندرت",
+                    "score": 1
+                },
+                {
+                    "text": "بله، گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "بله، خیلی زیاد",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "بدون دلیل خوبی ترسیده یا وحشت‌زده شده‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، خیلی زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بله، گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "نه، نه زیاد",
+                    "score": 1
+                },
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "کارها روی سرم ریخته",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، اغلب نتوانستم کنار بیایم",
+                    "score": 3
+                },
+                {
+                    "text": "بله، گاهی نتوانستم مثل همیشه کنار بیایم",
+                    "score": 2
+                },
+                {
+                    "text": "نه، بیشتر اوقات خوب کنار آمدم",
+                    "score": 1
+                },
+                {
+                    "text": "نه، مثل همیشه کنار آمدم",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "آنقدر ناراحت بوده‌ام که مشکل خواب داشته‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، اغلب اوقات",
+                    "score": 3
+                },
+                {
+                    "text": "بله، گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "نه خیلی",
+                    "score": 1
+                },
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "غمگین یا بدبخت احساس کرده‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، اغلب اوقات",
+                    "score": 3
+                },
+                {
+                    "text": "بله، خیلی زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "نه خیلی",
+                    "score": 1
+                },
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "آنقدر ناراحت بوده‌ام که گریه کرده‌ام",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "بله، اغلب اوقات",
+                    "score": 3
+                },
+                {
+                    "text": "بله، خیلی زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "فقط گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "نه، اصلاً",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "فکر آسیب رساندن به خودم به ذهنم رسیده",
+            "scaleKey": "total",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "بله، خیلی زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "به ندرت",
+                    "score": 1
+                },
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 9,
+            "label": "Normal",
+            "labelFa": "طبیعی"
+        },
+        {
+            "scaleKey": "total",
+            "min": 10,
+            "max": 12,
+            "label": "Possible Depression",
+            "labelFa": "احتمال افسردگی - نیاز به پیگیری"
+        },
+        {
+            "scaleKey": "total",
+            "min": 13,
+            "max": 30,
+            "label": "Probable Depression",
+            "labelFa": "افسردگی محتمل - نیاز به ارزیابی"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "total",
+            "title": "بدون علائم افسردگی پس از زایمان",
+            "summary": "نمره شما در محدوده طبیعی است.",
+            "details": "به نظر می‌رسد خوب با دوره پس از زایمان کنار می‌آیید.",
+            "recommendations": "ادامه دادن به مراقبت از خود و استراحت کافی.",
+            "disclaimer": "اگر احساس بدی دارید، با پزشک صحبت کنید."
+        },
+        {
+            "level_label": "Probable Depression",
+            "scaleKey": "total",
+            "title": "علائم افسردگی پس از زایمان",
+            "summary": "نمره شما نشان‌دهنده احتمال افسردگی پس از زایمان است.",
+            "details": "این یک وضعیت قابل درمان است و کمک گرفتن مهم است.",
+            "recommendations": "لطفاً با پزشک یا متخصص سلامت روان صحبت کنید.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": [
+        {
+            "condition": "q10 > 0",
+            "message": "⚠️ شما افکار آسیب به خود را گزارش کرده‌اید. لطفاً فوراً با پزشک یا خط اورژانس اجتماعی ۱۲۳ تماس بگیرید.",
+            "severity": "emergency"
+        }
+    ]
+}

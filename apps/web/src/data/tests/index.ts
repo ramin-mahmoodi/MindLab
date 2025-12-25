@@ -16,6 +16,15 @@ import cssrs from './c-ssrs.json';
 import asrs from './asrs.json';
 import mdq from './mdq.json';
 import eat26 from './eat-26.json';
+// New tests
+import stai from './stai.json';
+import lsas from './lsas.json';
+import aq10 from './aq-10.json';
+import epds from './epds.json';
+import cage from './cage.json';
+import dast10 from './dast-10.json';
+import qidsSr from './qids-sr.json';
+import psqi from './psqi.json';
 
 // Type definitions
 export interface TestOption {
@@ -80,7 +89,7 @@ export interface TestDefinition {
     risk_rules: RiskRule[];
 }
 
-// Export all test definitions
+// Export all test definitions (23 tests total)
 export const TEST_DEFINITIONS: TestDefinition[] = [
     // General Screening
     ghq12 as TestDefinition,
@@ -88,10 +97,14 @@ export const TEST_DEFINITIONS: TestDefinition[] = [
     // Depression
     phq9 as TestDefinition,
     bdiII as TestDefinition,
+    qidsSr as TestDefinition,
+    epds as TestDefinition,
 
     // Anxiety
     gad7 as TestDefinition,
     bai as TestDefinition,
+    stai as TestDefinition,
+    lsas as TestDefinition,
 
     // Stress
     pss as TestDefinition,
@@ -114,9 +127,15 @@ export const TEST_DEFINITIONS: TestDefinition[] = [
 
     // Sleep
     isi as TestDefinition,
+    psqi as TestDefinition,
 
     // Substance Use
     audit as TestDefinition,
+    cage as TestDefinition,
+    dast10 as TestDefinition,
+
+    // Autism
+    aq10 as TestDefinition,
 
     // Suicide / Risk
     cssrs as TestDefinition,
