@@ -1,0 +1,8 @@
+name = "mindlab"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "apps/web/dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mindlab-db"
+database_id = "98983811-bf04-441a-a2ef-90ec9f84bfca"

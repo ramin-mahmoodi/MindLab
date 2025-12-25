@@ -1,0 +1,573 @@
+{
+    "slug": "bai",
+    "name": "BAI",
+    "nameFa": "پرسشنامه اضطراب بک",
+    "category": "Anxiety",
+    "categoryFa": "اضطراب",
+    "description": "Beck Anxiety Inventory",
+    "descriptionFa": "ابزار ۲۱ سوالی برای سنجش شدت علائم اضطراب در هفته گذشته.",
+    "analysis_type": "direct",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "بی‌حسی یا سوزن‌سوزن شدن اعضای بدن",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "احساس گرما",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "لرزش پاها",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "ناتوانی در آرامش یافتن",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "ترس از وقوع بدترین اتفاق",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "سرگیجه یا منگی",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "تپش قلب یا تند زدن قلب",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "بی‌ثباتی",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "وحشت‌زدگی",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "عصبانیت",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "احساس خفگی",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "لرزش دست‌ها",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "لرزش کل بدن",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "ترس از دست دادن کنترل",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "تنگی نفس",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "ترس از مرگ",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "ترس و وحشت",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "ناراحتی معده یا سوء هاضمه",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "ضعف یا سستی",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "گُر گرفتن صورت",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "عرق کردن (نه به دلیل گرما)",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "خفیف",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 7,
+            "label": "Minimal",
+            "labelFa": "حداقل"
+        },
+        {
+            "scaleKey": "total",
+            "min": 8,
+            "max": 15,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "total",
+            "min": 16,
+            "max": 25,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "total",
+            "min": 26,
+            "max": 63,
+            "label": "Severe",
+            "labelFa": "شدید"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Minimal",
+            "scaleKey": "total",
+            "title": "اضطراب حداقلی",
+            "summary": "علائم اضطراب در سطح طبیعی است.",
+            "details": "نمره شما نشان‌دهنده عدم وجود علائم قابل توجه اضطراب است.",
+            "recommendations": "ادامه روش‌های فعلی مدیریت استرس.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Mild",
+            "scaleKey": "total",
+            "title": "اضطراب خفیف",
+            "summary": "علائم اضطراب در سطح خفیف است.",
+            "details": "برخی علائم جسمانی و روانی اضطراب گزارش شده.",
+            "recommendations": "تکنیک‌های آرام‌سازی و تنفس عمیق مفید است.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Moderate",
+            "scaleKey": "total",
+            "title": "اضطراب متوسط",
+            "summary": "علائم اضطراب در سطح متوسط است.",
+            "details": "علائم قابل توجه اضطراب که بر عملکرد تأثیر می‌گذارد.",
+            "recommendations": "مراجعه به روان‌شناس توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "total",
+            "title": "اضطراب شدید",
+            "summary": "علائم اضطراب در سطح شدید است.",
+            "details": "علائم شدید اضطراب که نیاز به مداخله تخصصی دارد.",
+            "recommendations": "مراجعه فوری به متخصص بهداشت روان.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

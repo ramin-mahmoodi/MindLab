@@ -1,0 +1,220 @@
+{
+    "slug": "asrs",
+    "name": "ASRS v1.1",
+    "nameFa": "غربالگری ADHD بزرگسالان",
+    "category": "ADHD",
+    "categoryFa": "بیش‌فعالی",
+    "description": "Adult ADHD Self-Report Scale v1.1 Screener",
+    "descriptionFa": "ابزار ۶ سوالی WHO برای غربالگری اختلال کمبود توجه/بیش‌فعالی در بزرگسالان.",
+    "analysis_type": "direct",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 3,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Screening Score",
+            "nameFa": "نمره غربالگری"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "چند وقت یک بار در تمام کردن جزئیات نهایی یک پروژه پس از اتمام بخش‌های چالش‌برانگیز مشکل دارید؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "چند وقت یک بار در منظم کردن کارها وقتی به انجام کاری نیاز دارید که سازماندهی می‌خواهد مشکل دارید؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "چند وقت یک بار قرار ملاقات یا تعهداتی را فراموش می‌کنید؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "وقتی کاری نیاز به تفکر زیاد دارد، چند وقت یک بار از شروع آن اجتناب یا تأخیر می‌کنید؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "چند وقت یک بار وقتی مجبور به نشستن طولانی هستید، دست و پایتان را تکان می‌دهید یا بی‌قرار هستید؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "چند وقت یک بار احساس می‌کنید که بیش از حد فعال و مجبور به انجام کارها هستید، مثل اینکه یک موتور پشت شما باشد؟",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "خیلی زیاد",
+                    "score": 1
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 3,
+            "label": "Low Likelihood",
+            "labelFa": "احتمال پایین"
+        },
+        {
+            "scaleKey": "total",
+            "min": 4,
+            "max": 6,
+            "label": "High Likelihood",
+            "labelFa": "احتمال بالا"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Low Likelihood",
+            "scaleKey": "total",
+            "title": "احتمال پایین ADHD",
+            "summary": "علائم بیش‌فعالی/کمبود توجه در سطح پایین است.",
+            "details": "نمره شما نشان‌دهنده احتمال کم وجود ADHD است.",
+            "recommendations": "نیازی به ارزیابی تخصصی نیست مگر اینکه مشکلات دیگری وجود داشته باشد.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "High Likelihood",
+            "scaleKey": "total",
+            "title": "احتمال بالای ADHD",
+            "summary": "علائم نشان‌دهنده احتمال وجود ADHD است.",
+            "details": "نمره شما نشان‌دهنده احتمال بالای وجود ADHD است و نیاز به ارزیابی تخصصی دارد.",
+            "recommendations": "مراجعه به روان‌پزشک یا روان‌شناس متخصص ADHD برای ارزیابی کامل.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

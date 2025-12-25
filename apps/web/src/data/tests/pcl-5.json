@@ -1,0 +1,605 @@
+{
+    "slug": "pcl-5",
+    "name": "PCL-5",
+    "nameFa": "چک‌لیست PTSD - ویرایش پنجم",
+    "category": "PTSD",
+    "categoryFa": "تروما و PTSD",
+    "description": "PTSD Checklist for DSM-5",
+    "descriptionFa": "ابزار ۲۰ سوالی برای غربالگری علائم اختلال استرس پس از سانحه.",
+    "analysis_type": "direct",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "خاطرات، افکار یا تصاویر ناخواسته و مزاحم از تجربه استرس‌زا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "خواب‌های مزاحم یا کابوس‌هایی درباره تجربه استرس‌زا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "ناگهان احساس یا رفتار کردن انگار که تجربه استرس‌زا دوباره در حال وقوع است",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "احساس ناراحتی شدید هنگام یادآوری تجربه استرس‌زا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "واکنش‌های جسمی شدید هنگام یادآوری تجربه استرس‌زا (تپش قلب، تنگی نفس، عرق‌کردن)",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "اجتناب از خاطرات، افکار یا احساسات مرتبط با تجربه استرس‌زا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "اجتناب از یادآورهای بیرونی (افراد، مکان‌ها، فعالیت‌ها)",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "مشکل در به یاد آوردن بخش‌های مهم تجربه استرس‌زا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "باورهای منفی قوی درباره خود، دیگران یا دنیا",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "سرزنش کردن خود یا دیگران برای تجربه استرس‌زا یا پیامدهای آن",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "احساسات منفی قوی مانند ترس، وحشت، خشم، گناه یا شرم",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "از دست دادن علاقه به فعالیت‌هایی که قبلاً لذت‌بخش بودند",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "احساس فاصله یا بیگانگی با دیگران",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "مشکل در تجربه احساسات مثبت",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "رفتار تحریک‌پذیر، طغیان‌های خشم یا رفتار پرخاشگرانه",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "انجام رفتارهای خطرناک یا خود-ویرانگر",
+            "scaleKey": "total",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "گوش‌به‌زنگ بودن یا مراقب بودن بیش از حد",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "به راحتی یکه خوردن یا ترسیدن",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "مشکل در تمرکز",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "مشکل در به خواب رفتن یا ادامه خواب",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 30,
+            "label": "Below Threshold",
+            "labelFa": "زیر آستانه"
+        },
+        {
+            "scaleKey": "total",
+            "min": 31,
+            "max": 80,
+            "label": "Probable PTSD",
+            "labelFa": "احتمال PTSD"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Below Threshold",
+            "scaleKey": "total",
+            "title": "علائم زیر آستانه تشخیصی",
+            "summary": "علائم PTSD در سطح پایین‌تر از آستانه تشخیصی است.",
+            "details": "بر اساس نمره شما، علائم PTSD به حد تشخیصی نمی‌رسد. با این حال، وجود هر گونه علائم نیاز به توجه دارد.",
+            "recommendations": "در صورت تجربه تروما، حمایت اجتماعی و در صورت نیاز مشاوره.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Probable PTSD",
+            "scaleKey": "total",
+            "title": "احتمال PTSD",
+            "summary": "علائم شما نشان‌دهنده احتمال وجود PTSD است.",
+            "details": "نمره شما بالاتر از آستانه تشخیصی است و نشان‌دهنده وجود علائم قابل توجه PTSD می‌باشد.",
+            "recommendations": "مراجعه به روان‌شناس یا روان‌پزشک متخصص تروما ضروری است. درمان‌های مؤثری مانند EMDR و CPT وجود دارد.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": [
+        {
+            "condition": "q16_score >= 2",
+            "message": "⚠️ رفتارهای خطرناک یا خود-ویرانگر گزارش شده است. لطفاً با یک متخصص بهداشت روان صحبت کنید.",
+            "severity": "warning"
+        }
+    ]
+}

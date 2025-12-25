@@ -1,0 +1,544 @@
+{
+    "slug": "oci-r",
+    "name": "OCI-R",
+    "nameFa": "پرسشنامه وسواس - تجدیدنظر شده",
+    "category": "OCD",
+    "categoryFa": "وسواس",
+    "description": "Obsessive-Compulsive Inventory - Revised",
+    "descriptionFa": "ابزار ۱۸ سوالی برای غربالگری علائم اختلال وسواس فکری-عملی.",
+    "analysis_type": "direct",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 7,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "چیزها را بیش از حد لازم چک می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "افکار ناخوشایندی به ذهنم می‌آید که نمی‌توانم از شرشان خلاص شوم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "نیاز دارم چیزها به ترتیب خاصی باشند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "بیش از حد لازم دست‌هایم را می‌شویم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "افکار آزاردهنده درباره آسیب رساندن وجود دارد.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "چیزهایی را که به آن‌ها نیاز ندارم جمع می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "مجبورم چیزها را چندین بار چک کنم قبل از ترک خانه.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "افکار ناخوشایند درباره مسائل مذهبی یا جنسی دارم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "ناراحت می‌شوم اگر چیزها در جای درست نباشند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "بلافاصله بعد از لمس چیزی باید دست‌هایم را بشویم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "تصاویر وحشتناک به ذهنم می‌آید.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "نمی‌توانم از جمع کردن چیزهای بی‌استفاده دست بکشم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "مکرراً چک می‌کنم که درها، پنجره‌ها و کشوها بسته باشند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "افکاری دارم که می‌ترسم اگر به زبان بیاورم به واقعیت تبدیل شوند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "نظم و ترتیب برایم خیلی مهم است.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "گاهی مجبور می‌شوم بیش از حد لازم بشویم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "افکار آزاردهنده درباره از دست دادن کنترل دارم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "چیزهایی را جمع می‌کنم که جایی برای گذاشتن آن‌ها ندارم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 20,
+            "label": "Low",
+            "labelFa": "پایین"
+        },
+        {
+            "scaleKey": "total",
+            "min": 21,
+            "max": 72,
+            "label": "Clinical",
+            "labelFa": "بالینی"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Low",
+            "scaleKey": "total",
+            "title": "علائم وسواس در سطح پایین",
+            "summary": "علائم وسواس در محدوده غیربالینی است.",
+            "details": "نمره شما نشان‌دهنده عدم وجود علائم OCD بالینی است.",
+            "recommendations": "نیازی به اقدام خاصی نیست.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Clinical",
+            "scaleKey": "total",
+            "title": "علائم وسواس در سطح بالینی",
+            "summary": "علائم وسواس در محدوده بالینی قرار دارد.",
+            "details": "نمره شما نشان‌دهنده احتمال وجود OCD است که نیاز به ارزیابی تخصصی دارد.",
+            "recommendations": "مراجعه به روان‌شناس یا روان‌پزشک برای ارزیابی و درمان مانند ERP.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

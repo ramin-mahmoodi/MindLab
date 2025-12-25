@@ -1,0 +1,879 @@
+{
+    "slug": "eat-26",
+    "name": "EAT-26",
+    "nameFa": "تست نگرش خوردن",
+    "category": "Eating",
+    "categoryFa": "اختلالات خوردن",
+    "description": "Eating Attitudes Test - 26 item version",
+    "descriptionFa": "ابزار غربالگری برای شناسایی علائم و نگرش‌های مرتبط با اختلالات خوردن.",
+    "analysis_type": "direct",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "از چربی‌های زیر پوست بدنم می‌ترسم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "وقتی گرسنه‌ام از خوردن اجتناب می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "خودم را مشغول به فکر کردن درباره غذا می‌یابم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "پرخوری کرده‌ام به طوری که احساس کرده‌ام نمی‌توانم متوقف شوم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "غذایم را به تکه‌های کوچک تقسیم می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "از محتوای کالری غذاهایی که می‌خورم آگاهم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "از غذاهای پرکربوهیدرات اجتناب می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "احساس می‌کنم دیگران ترجیح می‌دهند من بیشتر بخورم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "بعد از خوردن استفراغ می‌کنم.",
+            "scaleKey": "total",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "بعد از خوردن احساس گناه شدید می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "تمایل به لاغرتر شدن را دارم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "هنگام ورزش به سوزاندن کالری فکر می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "دیگران فکر می‌کنند که من خیلی لاغرم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "به فکر داشتن چربی در بدنم مشغولم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "غذا خوردن بیشتر از دیگران زمان می‌برد.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "از غذاهای شیرین اجتناب می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "غذاهای رژیمی می‌خورم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "احساس می‌کنم غذا زندگیم را کنترل می‌کند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "روی غذا خوردن کنترل دارم.",
+            "scaleKey": "total",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 0
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 0
+                },
+                {
+                    "text": "اغلب",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 2
+                },
+                {
+                    "text": "هرگز",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "احساس می‌کنم دیگران مرا مجبور به خوردن می‌کنند.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "وقت زیادی را به فکر کردن درباره غذا می‌گذرانم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "بعد از خوردن شیرینی احساس ناراحتی می‌کنم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "رفتارهای رژیمی انجام می‌دهم.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "دوست دارم معده‌ام خالی باشد.",
+            "scaleKey": "total",
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 25,
+            "text": "از امتحان کردن غذاهای جدید غنی لذت می‌برم.",
+            "scaleKey": "total",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 0
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 0
+                },
+                {
+                    "text": "اغلب",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 2
+                },
+                {
+                    "text": "هرگز",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 26,
+            "text": "تمایل به استفراغ بعد از غذا دارم.",
+            "scaleKey": "total",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "همیشه",
+                    "score": 3
+                },
+                {
+                    "text": "معمولاً",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 0
+                },
+                {
+                    "text": "به‌ندرت",
+                    "score": 0
+                },
+                {
+                    "text": "هرگز",
+                    "score": 0
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 19,
+            "label": "Low Risk",
+            "labelFa": "ریسک پایین"
+        },
+        {
+            "scaleKey": "total",
+            "min": 20,
+            "max": 78,
+            "label": "At Risk",
+            "labelFa": "در معرض خطر"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Low Risk",
+            "scaleKey": "total",
+            "title": "ریسک پایین اختلال خوردن",
+            "summary": "نگرش‌های خوردن شما در محدوده طبیعی است.",
+            "details": "نمره شما نشان‌دهنده عدم وجود علائم قابل توجه اختلالات خوردن است.",
+            "recommendations": "حفظ رابطه سالم با غذا و بدن.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "At Risk",
+            "scaleKey": "total",
+            "title": "در معرض خطر اختلال خوردن",
+            "summary": "نگرش‌های خوردن شما نشان‌دهنده احتمال وجود مشکل است.",
+            "details": "نمره شما بالاتر از آستانه است و نیاز به ارزیابی تخصصی دارد.",
+            "recommendations": "مراجعه به متخصص تغذیه-روان‌شناس یا روان‌پزشک ضروری است.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": [
+        {
+            "condition": "q9_score >= 1",
+            "message": "⚠️ رفتار استفراغ بعد از غذا گزارش شده است. لطفاً با یک متخصص صحبت کنید.",
+            "severity": "warning"
+        },
+        {
+            "condition": "q26_score >= 1",
+            "message": "⚠️ تمایل به استفراغ گزارش شده است. این یک رفتار خطرناک است. لطفاً کمک بگیرید.",
+            "severity": "warning"
+        }
+    ]
+}

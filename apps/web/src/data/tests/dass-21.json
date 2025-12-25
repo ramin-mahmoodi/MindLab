@@ -1,0 +1,766 @@
+{
+    "slug": "dass-21",
+    "name": "DASS-21",
+    "nameFa": "مقیاس افسردگی، اضطراب و استرس - ۲۱ سوالی",
+    "category": "Stress",
+    "categoryFa": "استرس",
+    "description": "Depression Anxiety Stress Scales - 21 item version",
+    "descriptionFa": "ابزار غربالگری سه‌گانه برای سنجش همزمان افسردگی، اضطراب و استرس.",
+    "analysis_type": "profile",
+    "warning": "این نتیجه جایگزین ارزیابی تخصصی توسط روان‌شناس یا روان‌پزشک نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "depression",
+            "name": "Depression",
+            "nameFa": "افسردگی"
+        },
+        {
+            "key": "anxiety",
+            "name": "Anxiety",
+            "nameFa": "اضطراب"
+        },
+        {
+            "key": "stress",
+            "name": "Stress",
+            "nameFa": "استرس"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "متوجه شدم که برای مسائل کم‌اهمیت ناراحت می‌شوم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "متوجه خشکی دهانم شدم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "به نظر می‌رسید که هیچ احساس مثبتی نداشتم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "مشکل تنفسی داشتم (مثل تنگی نفس بدون فعالیت بدنی).",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "انگیزه‌ای برای انجام کارها نداشتم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "تمایل داشتم به موقعیت‌ها بیش از حد واکنش نشان دهم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "لرزش (مثلاً در دست‌ها) را تجربه کردم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "احساس می‌کردم انرژی عصبی زیادی مصرف می‌کنم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "نگران موقعیت‌هایی بودم که ممکن است دچار وحشت شوم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "احساس می‌کردم چیزی برای امیدواری ندارم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "متوجه شدم که به راحتی آزرده می‌شوم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "مشکل در آرام شدن داشتم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "احساس ناامیدی و غمگینی داشتم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "تحمل چیزهایی که مانع کارم می‌شد، سخت بود.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "احساس نزدیک به وحشت داشتم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "نمی‌توانستم برای هیچ چیز شور و شوق داشته باشم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "احساس بی‌ارزشی داشتم.",
+            "scaleKey": "depression",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "احساس می‌کردم خیلی حساس هستم.",
+            "scaleKey": "stress",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "تپش قلب را بدون فعالیت بدنی متوجه شدم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "بدون دلیل احساس ترس داشتم.",
+            "scaleKey": "anxiety",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "احساس می‌کردم زندگی بی‌معناست.",
+            "scaleKey": "depression",
+            "riskItem": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "گاهی",
+                    "score": 2
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "depression",
+            "min": 0,
+            "max": 4,
+            "label": "Normal",
+            "labelFa": "عادی"
+        },
+        {
+            "scaleKey": "depression",
+            "min": 5,
+            "max": 6,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "depression",
+            "min": 7,
+            "max": 10,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "depression",
+            "min": 11,
+            "max": 13,
+            "label": "Severe",
+            "labelFa": "شدید"
+        },
+        {
+            "scaleKey": "depression",
+            "min": 14,
+            "max": 21,
+            "label": "Extremely Severe",
+            "labelFa": "بسیار شدید"
+        },
+        {
+            "scaleKey": "anxiety",
+            "min": 0,
+            "max": 3,
+            "label": "Normal",
+            "labelFa": "عادی"
+        },
+        {
+            "scaleKey": "anxiety",
+            "min": 4,
+            "max": 5,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "anxiety",
+            "min": 6,
+            "max": 7,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "anxiety",
+            "min": 8,
+            "max": 9,
+            "label": "Severe",
+            "labelFa": "شدید"
+        },
+        {
+            "scaleKey": "anxiety",
+            "min": 10,
+            "max": 21,
+            "label": "Extremely Severe",
+            "labelFa": "بسیار شدید"
+        },
+        {
+            "scaleKey": "stress",
+            "min": 0,
+            "max": 7,
+            "label": "Normal",
+            "labelFa": "عادی"
+        },
+        {
+            "scaleKey": "stress",
+            "min": 8,
+            "max": 9,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "stress",
+            "min": 10,
+            "max": 12,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "stress",
+            "min": 13,
+            "max": 16,
+            "label": "Severe",
+            "labelFa": "شدید"
+        },
+        {
+            "scaleKey": "stress",
+            "min": 17,
+            "max": 21,
+            "label": "Extremely Severe",
+            "labelFa": "بسیار شدید"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "depression",
+            "title": "افسردگی در محدوده عادی",
+            "summary": "علائم افسردگی در سطح نرمال است.",
+            "details": "نمره شما نشان‌دهنده عدم وجود علائم قابل توجه افسردگی است.",
+            "recommendations": "ادامه فعالیت‌های روزمره و حفظ سبک زندگی سالم.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Mild",
+            "scaleKey": "depression",
+            "title": "افسردگی خفیف",
+            "summary": "علائم افسردگی در سطح خفیف است.",
+            "details": "برخی علائم افسردگی گزارش شده که نیاز به پایش دارد.",
+            "recommendations": "تمرین خودمراقبتی و در صورت تداوم مراجعه به متخصص.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Moderate",
+            "scaleKey": "depression",
+            "title": "افسردگی متوسط",
+            "summary": "علائم افسردگی در سطح متوسط است.",
+            "details": "علائم قابل توجهی گزارش شده که بر عملکرد تأثیر می‌گذارد.",
+            "recommendations": "مراجعه به روان‌شناس یا روان‌پزشک توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "depression",
+            "title": "افسردگی شدید",
+            "summary": "علائم افسردگی در سطح شدید است.",
+            "details": "علائم شدید گزارش شده که نیاز به مداخله تخصصی دارد.",
+            "recommendations": "مراجعه فوری به متخصص بهداشت روان ضروری است.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Extremely Severe",
+            "scaleKey": "depression",
+            "title": "افسردگی بسیار شدید",
+            "summary": "علائم افسردگی در سطح بحرانی است.",
+            "details": "علائم بسیار شدید گزارش شده که نیاز به مداخله فوری دارد.",
+            "recommendations": "مراجعه فوری به روان‌پزشک یا مرکز بهداشت روان.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Normal",
+            "scaleKey": "anxiety",
+            "title": "اضطراب در محدوده عادی",
+            "summary": "علائم اضطراب در سطح نرمال است.",
+            "details": "نمره شما نشان‌دهنده عدم وجود علائم قابل توجه اضطراب است.",
+            "recommendations": "ادامه تکنیک‌های مدیریت استرس.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Mild",
+            "scaleKey": "anxiety",
+            "title": "اضطراب خفیف",
+            "summary": "علائم اضطراب در سطح خفیف است.",
+            "details": "برخی علائم اضطراب گزارش شده.",
+            "recommendations": "تکنیک‌های آرام‌سازی و تنفس عمیق مفید است.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Moderate",
+            "scaleKey": "anxiety",
+            "title": "اضطراب متوسط",
+            "summary": "علائم اضطراب در سطح متوسط است.",
+            "details": "علائم قابل توجه اضطراب گزارش شده.",
+            "recommendations": "مراجعه به روان‌شناس برای یادگیری تکنیک‌های CBT.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "anxiety",
+            "title": "اضطراب شدید",
+            "summary": "علائم اضطراب در سطح شدید است.",
+            "details": "علائم شدید اضطراب که بر زندگی تأثیر می‌گذارد.",
+            "recommendations": "مراجعه به متخصص بهداشت روان ضروری است.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Extremely Severe",
+            "scaleKey": "anxiety",
+            "title": "اضطراب بسیار شدید",
+            "summary": "علائم اضطراب در سطح بحرانی است.",
+            "details": "علائم بسیار شدید که نیاز به مداخله فوری دارد.",
+            "recommendations": "مراجعه فوری به روان‌پزشک.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Normal",
+            "scaleKey": "stress",
+            "title": "استرس در محدوده عادی",
+            "summary": "سطح استرس شما نرمال است.",
+            "details": "نمره شما نشان‌دهنده مدیریت خوب استرس است.",
+            "recommendations": "ادامه روش‌های فعلی مدیریت استرس.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Mild",
+            "scaleKey": "stress",
+            "title": "استرس خفیف",
+            "summary": "سطح استرس شما خفیف است.",
+            "details": "برخی علائم استرس گزارش شده.",
+            "recommendations": "تمرین تکنیک‌های آرام‌سازی و مدیریت زمان.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Moderate",
+            "scaleKey": "stress",
+            "title": "استرس متوسط",
+            "summary": "سطح استرس شما متوسط است.",
+            "details": "علائم قابل توجه استرس گزارش شده.",
+            "recommendations": "بررسی منابع استرس و مراجعه به مشاور.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "stress",
+            "title": "استرس شدید",
+            "summary": "سطح استرس شما شدید است.",
+            "details": "علائم شدید استرس که بر سلامت تأثیر می‌گذارد.",
+            "recommendations": "مراجعه به متخصص و کاهش عوامل استرس‌زا.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Extremely Severe",
+            "scaleKey": "stress",
+            "title": "استرس بسیار شدید",
+            "summary": "سطح استرس شما بحرانی است.",
+            "details": "علائم بسیار شدید استرس که نیاز به مداخله دارد.",
+            "recommendations": "مراجعه فوری به متخصص بهداشت روان.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": [
+        {
+            "condition": "q21_score >= 2",
+            "message": "⚠️ احساس بی‌معنایی زندگی گزارش شده است. لطفاً با یک متخصص بهداشت روان صحبت کنید.",
+            "severity": "warning"
+        }
+    ]
+}
