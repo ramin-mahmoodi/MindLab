@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getMySessions, Session } from '../lib/api';
+import { useLanguage } from '../components/LanguageContext';
 
 export default function Results() {
     const [sessions, setSessions] = useState<Session[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const { t, language } = useLanguage();
 
     useEffect(() => {
         loadSessions();
@@ -16,7 +18,7 @@ export default function Results() {
             const data = await getMySessions();
             setSessions(data);
         } catch (err) {
-            setError('خطا در بارگذاری نتایج');
+            setError(language === 'fa' ? 'خطا در بارگذاری نتایج' : 'Error loading results');
             console.error(err);
         } finally {
             setLoading(false);
@@ -25,7 +27,7 @@ export default function Results() {
 
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
-        return new Intl.DateTimeFormat('fa-IR', {
+        return new Intl.DateTimeFormat(language === 'fa' ? 'fa-IR' : 'en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
@@ -45,26 +47,35 @@ export default function Results() {
     return (
         <div className="container">
             <div className="page-header">
-                <h1 className="page-title">Your <span className="gradient-text">Results</span></h1>
-                <p className="page-subtitle persian">
-                    تاریخچه تست‌هایی که انجام داده‌اید و نتایج آن‌ها
-                </p>
+                <h1 className="page-title">
+                    {language === 'fa' ? (
+                        <><span className="gradient-text">نتایج</span> من</>
+                    ) : (
+                        <>My <span className="gradient-text">Results</span></>
+                    )}
+                </h1>
+                <p className="page-subtitle">{t('results.subtitle')}</p>
             </div>
 
             {error && (
-                <div className="alert alert-error persian">
+                <div className="alert alert-error">
                     <span className="alert-icon">❌</span>
                     <span>{error}</span>
                 </div>
             )}
 
             {sessions.length === 0 ? (
-                <div className="card text-center persian" style={{ padding: '3rem', maxWidth: '500px', margin: '0 auto' }}>
+                <div className="card text-center" style={{ padding: '3rem', maxWidth: '500px', margin: '0 auto' }}>
                     <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📝</div>
-                    <h3>هنوز تستی انجام نداده‌اید</h3>
-                    <p>برای شروع، یکی از تست‌های موجود را انتخاب کنید.</p>
+                    <h3>{t('results.empty')}</h3>
+                    <p>
+                        {language === 'fa'
+                            ? 'برای شروع، یکی از تست‌های موجود را انتخاب کنید.'
+                            : 'To start, choose one of the available tests.'
+                        }
+                    </p>
                     <Link to="/tests" className="btn btn-primary" style={{ marginTop: '1rem' }}>
-                        مشاهده تست‌ها →
+                        {t('nav.tests')} →
                     </Link>
                 </div>
             ) : (
@@ -76,15 +87,15 @@ export default function Results() {
                             )}
                             <h4>{session.test_name}</h4>
 
-                            <div className="persian" style={{ color: 'var(--color-text-muted)', marginBottom: '1rem', fontSize: '0.9rem', direction: 'rtl' }}>
+                            <div style={{ color: 'var(--color-text-muted)', marginBottom: '1rem', fontSize: '0.9rem' }}>
                                 <div>📅 {formatDate(session.created_at)}</div>
                                 {session.finished_at ? (
                                     <div style={{ color: 'var(--color-success)', marginTop: '0.5rem' }}>
-                                        ✅ تکمیل شده
+                                        ✅ {language === 'fa' ? 'تکمیل شده' : 'Completed'}
                                     </div>
                                 ) : (
                                     <div style={{ color: 'var(--color-warning)', marginTop: '0.5rem' }}>
-                                        ⏳ در حال انجام
+                                        ⏳ {language === 'fa' ? 'در حال انجام' : 'In Progress'}
                                     </div>
                                 )}
                             </div>
@@ -98,18 +109,22 @@ export default function Results() {
                                     border: '1px solid rgba(45, 212, 191, 0.2)',
                                     textAlign: 'center'
                                 }}>
-                                    <span className="persian" style={{ color: 'var(--color-text-muted)' }}>نمره کل: </span>
-                                    <strong className="gradient-text" style={{ fontSize: '1.25rem' }}>{session.total_score}</strong>
+                                    <span style={{ color: 'var(--color-text-muted)' }}>
+                                        {t('results.score')}:
+                                    </span>
+                                    <strong className="gradient-text" style={{ fontSize: '1.25rem', marginLeft: '0.5rem' }}>
+                                        {session.total_score}
+                                    </strong>
                                 </div>
                             )}
 
                             {session.finished_at ? (
                                 <Link to={`/results/${session.id}`} className="btn btn-primary btn-block">
-                                    مشاهده جزئیات →
+                                    {t('results.view')} →
                                 </Link>
                             ) : (
                                 <Link to={`/test/${session.test_id}`} className="btn btn-secondary btn-block">
-                                    ادامه تست
+                                    {language === 'fa' ? 'ادامه تست' : 'Continue Test'}
                                 </Link>
                             )}
                         </div>

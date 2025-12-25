@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { loginWithEmail, registerWithEmail, loginWithGoogle } from '../lib/firebase';
+import { useLanguage } from '../components/LanguageContext';
 
 export default function Login() {
     const [isRegister, setIsRegister] = useState(false);
@@ -9,6 +10,7 @@ export default function Login() {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+    const { t, language } = useLanguage();
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -20,12 +22,12 @@ export default function Login() {
         setError('');
 
         if (isRegister && password !== confirmPassword) {
-            setError('رمز عبور و تکرار آن باید یکسان باشند');
+            setError(language === 'fa' ? 'رمز عبور و تکرار آن باید یکسان باشند' : 'Passwords do not match');
             return;
         }
 
         if (password.length < 6) {
-            setError('رمز عبور باید حداقل ۶ کاراکتر باشد');
+            setError(language === 'fa' ? 'رمز عبور باید حداقل ۶ کاراکتر باشد' : 'Password must be at least 6 characters');
             return;
         }
 
@@ -40,17 +42,13 @@ export default function Login() {
             navigate(from, { replace: true });
         } catch (err: any) {
             console.error('Auth error:', err);
-            if (err.code === 'auth/user-not-found') {
-                setError('کاربری با این ایمیل یافت نشد');
-            } else if (err.code === 'auth/wrong-password') {
-                setError('رمز عبور اشتباه است');
-            } else if (err.code === 'auth/email-already-in-use') {
-                setError('این ایمیل قبلاً ثبت شده است');
-            } else if (err.code === 'auth/invalid-email') {
-                setError('فرمت ایمیل صحیح نیست');
-            } else {
-                setError('خطا در ورود. لطفاً دوباره تلاش کنید.');
-            }
+            const errors: Record<string, string> = {
+                'auth/user-not-found': language === 'fa' ? 'کاربری با این ایمیل یافت نشد' : 'User not found',
+                'auth/wrong-password': language === 'fa' ? 'رمز عبور اشتباه است' : 'Wrong password',
+                'auth/email-already-in-use': language === 'fa' ? 'این ایمیل قبلاً ثبت شده است' : 'Email already in use',
+                'auth/invalid-email': language === 'fa' ? 'فرمت ایمیل صحیح نیست' : 'Invalid email format',
+            };
+            setError(errors[err.code] || (language === 'fa' ? 'خطا در ورود. لطفاً دوباره تلاش کنید.' : 'Login failed. Please try again.'));
         } finally {
             setLoading(false);
         }
@@ -66,9 +64,9 @@ export default function Login() {
         } catch (err: any) {
             console.error('Google auth error:', err);
             if (err.code === 'auth/popup-closed-by-user') {
-                setError('پنجره ورود بسته شد');
+                setError(language === 'fa' ? 'پنجره ورود بسته شد' : 'Login popup was closed');
             } else {
-                setError('خطا در ورود با گوگل');
+                setError(language === 'fa' ? 'خطا در ورود با گوگل' : 'Google login failed');
             }
         } finally {
             setLoading(false);
@@ -79,16 +77,16 @@ export default function Login() {
         <div className="container" style={{ maxWidth: '450px', margin: '0 auto' }}>
             <div className="card">
                 <div className="card-header text-center">
-                    <h2>{isRegister ? 'Create Account' : 'Sign In'}</h2>
-                    <p className="text-muted persian">
+                    <h2>{isRegister ? t('login.register') : t('login.title')}</h2>
+                    <p className="text-muted">
                         {isRegister
-                            ? 'یک حساب کاربری جدید بسازید'
-                            : 'وارد حساب کاربری خود شوید'}
+                            ? (language === 'fa' ? 'یک حساب کاربری جدید بسازید' : 'Create a new account')
+                            : (language === 'fa' ? 'وارد حساب کاربری خود شوید' : 'Sign in to your account')}
                     </p>
                 </div>
 
                 {error && (
-                    <div className="alert alert-error persian">
+                    <div className="alert alert-error">
                         <span className="alert-icon">❌</span>
                         <span>{error}</span>
                     </div>
@@ -96,7 +94,7 @@ export default function Login() {
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label className="form-label">Email | ایمیل</label>
+                        <label className="form-label">{t('login.email')}</label>
                         <input
                             type="email"
                             className="form-input"
@@ -109,13 +107,13 @@ export default function Login() {
                     </div>
 
                     <div className="form-group">
-                        <label className="form-label">Password | رمز عبور</label>
+                        <label className="form-label">{t('login.password')}</label>
                         <input
                             type="password"
                             className="form-input"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            placeholder="حداقل ۶ کاراکتر"
+                            placeholder={language === 'fa' ? 'حداقل ۶ کاراکتر' : 'At least 6 characters'}
                             required
                             dir="ltr"
                         />
@@ -123,13 +121,15 @@ export default function Login() {
 
                     {isRegister && (
                         <div className="form-group">
-                            <label className="form-label">Confirm Password | تکرار رمز عبور</label>
+                            <label className="form-label">
+                                {language === 'fa' ? 'تکرار رمز عبور' : 'Confirm Password'}
+                            </label>
                             <input
                                 type="password"
                                 className="form-input"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
-                                placeholder="رمز عبور را تکرار کنید"
+                                placeholder={language === 'fa' ? 'رمز عبور را تکرار کنید' : 'Repeat password'}
                                 required
                                 dir="ltr"
                             />
@@ -141,7 +141,9 @@ export default function Login() {
                         className="btn btn-primary btn-block btn-large"
                         disabled={loading}
                     >
-                        {loading ? 'لطفاً صبر کنید...' : (isRegister ? 'ثبت‌نام' : 'ورود')}
+                        {loading
+                            ? (language === 'fa' ? 'لطفاً صبر کنید...' : 'Please wait...')
+                            : (isRegister ? t('login.register') : t('login.submit'))}
                     </button>
                 </form>
 
@@ -155,7 +157,7 @@ export default function Login() {
                         padding: '0 1rem',
                         color: 'var(--color-text-muted)'
                     }}>
-                        یا
+                        {language === 'fa' ? 'یا' : 'or'}
                     </span>
                     <hr style={{
                         position: 'absolute',
@@ -179,11 +181,11 @@ export default function Login() {
                         <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
                         <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                     </svg>
-                    ورود با گوگل
+                    {t('login.google')}
                 </button>
 
-                <p className="persian" style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-                    {isRegister ? 'قبلاً ثبت‌نام کرده‌اید؟' : 'حساب کاربری ندارید؟'}
+                <p style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+                    {isRegister ? t('login.have.account') : t('login.no.account')}
                     {' '}
                     <button
                         onClick={() => { setIsRegister(!isRegister); setError(''); }}
@@ -196,7 +198,7 @@ export default function Login() {
                             fontWeight: 500
                         }}
                     >
-                        {isRegister ? 'ورود' : 'ثبت‌نام'}
+                        {isRegister ? t('login.submit') : t('login.register')}
                     </button>
                 </p>
             </div>
