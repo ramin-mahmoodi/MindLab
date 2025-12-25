@@ -1,4 +1,5 @@
 // Admin endpoint to sync test definitions from code to D1 database
+// Optimized version with batched queries
 import { TEST_DEFINITIONS, TestDefinition } from '../../../src/data/tests/index';
 
 interface Env {
@@ -7,22 +8,14 @@ interface Env {
 }
 
 interface SyncResult {
-    testsInserted: number;
-    testsUpdated: number;
-    scalesCreated: number;
-    questionsCreated: number;
-    optionsCreated: number;
-    cutoffsCreated: number;
-    templatesCreated: number;
-    riskRulesCreated: number;
-    categories: Record<string, number>;
+    testsProcessed: number;
     errors: string[];
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
-    const { data, env } = context;
+    const { data, env, request } = context;
 
-    // Check admin auth (middleware should have set this)
+    // Check admin auth
     if (!(data as any).isAdmin) {
         return new Response(JSON.stringify({ error: 'Forbidden: Admin access required' }), {
             status: 403,
@@ -30,37 +23,32 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         });
     }
 
+    // Get optional slug parameter to sync single test
+    const url = new URL(request.url);
+    const singleSlug = url.searchParams.get('slug');
+
     const result: SyncResult = {
-        testsInserted: 0,
-        testsUpdated: 0,
-        scalesCreated: 0,
-        questionsCreated: 0,
-        optionsCreated: 0,
-        cutoffsCreated: 0,
-        templatesCreated: 0,
-        riskRulesCreated: 0,
-        categories: {},
+        testsProcessed: 0,
         errors: []
     };
 
     try {
-        for (const testDef of TEST_DEFINITIONS) {
-            try {
-                await syncTest(env.DB, testDef, result);
+        const testsToSync = singleSlug
+            ? TEST_DEFINITIONS.filter(t => t.slug === singleSlug)
+            : TEST_DEFINITIONS;
 
-                // Track categories
-                if (!result.categories[testDef.category]) {
-                    result.categories[testDef.category] = 0;
-                }
-                result.categories[testDef.category]++;
+        for (const testDef of testsToSync) {
+            try {
+                await syncTestBatched(env.DB, testDef);
+                result.testsProcessed++;
             } catch (err: any) {
-                result.errors.push(`Error syncing ${testDef.slug}: ${err.message}`);
+                result.errors.push(`${testDef.slug}: ${err.message}`);
             }
         }
 
         return new Response(JSON.stringify({
             success: true,
-            message: `Synced ${TEST_DEFINITIONS.length} tests`,
+            message: `Synced ${result.testsProcessed}/${testsToSync.length} tests`,
             result
         }), {
             status: 200,
@@ -78,8 +66,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 };
 
-async function syncTest(db: D1Database, testDef: TestDefinition, result: SyncResult): Promise<void> {
-    // 1. Upsert the test
+async function syncTestBatched(db: D1Database, testDef: TestDefinition): Promise<void> {
+    // Use a single batch for all operations
+    const statements: D1PreparedStatement[] = [];
+
+    // 1. Check if test exists
     const existingTest = await db.prepare(
         'SELECT id FROM tests WHERE slug = ?'
     ).bind(testDef.slug).first<{ id: number }>();
@@ -87,131 +78,94 @@ async function syncTest(db: D1Database, testDef: TestDefinition, result: SyncRes
     let testId: number;
 
     if (existingTest) {
-        // Update existing test
-        await db.prepare(`
-      UPDATE tests SET 
-        name = ?, 
-        description = ?, 
-        category = ?, 
-        analysis_type = ?,
-        warning = ?
-      WHERE slug = ?
-    `).bind(
-            testDef.nameFa,
-            testDef.descriptionFa,
-            testDef.category,
-            testDef.analysis_type,
-            testDef.warning,
-            testDef.slug
-        ).run();
         testId = existingTest.id;
-        result.testsUpdated++;
+        statements.push(
+            db.prepare(`UPDATE tests SET name = ?, description = ?, category = ?, analysis_type = ?, warning = ? WHERE slug = ?`)
+                .bind(testDef.nameFa, testDef.descriptionFa, testDef.category, testDef.analysis_type, testDef.warning, testDef.slug)
+        );
     } else {
-        // Insert new test
+        // Insert test first to get ID
         const insertResult = await db.prepare(`
       INSERT INTO tests (name, description, category, analysis_type, warning, slug)
       VALUES (?, ?, ?, ?, ?, ?)
-    `).bind(
-            testDef.nameFa,
-            testDef.descriptionFa,
-            testDef.category,
-            testDef.analysis_type,
-            testDef.warning,
-            testDef.slug
-        ).run();
+    `).bind(testDef.nameFa, testDef.descriptionFa, testDef.category, testDef.analysis_type, testDef.warning, testDef.slug).run();
         testId = insertResult.meta.last_row_id as number;
-        result.testsInserted++;
     }
 
-    // 2. Sync scales - delete old and insert new
-    await db.prepare('DELETE FROM scales WHERE test_id = ?').bind(testId).run();
+    // 2. Delete old data
+    statements.push(db.prepare('DELETE FROM question_scales WHERE question_id IN (SELECT id FROM questions WHERE test_id = ?)').bind(testId));
+    statements.push(db.prepare('DELETE FROM options WHERE question_id IN (SELECT id FROM questions WHERE test_id = ?)').bind(testId));
+    statements.push(db.prepare('DELETE FROM questions WHERE test_id = ?').bind(testId));
+    statements.push(db.prepare('DELETE FROM cutoffs WHERE scale_id IN (SELECT id FROM scales WHERE test_id = ?)').bind(testId));
+    statements.push(db.prepare('DELETE FROM scales WHERE test_id = ?').bind(testId));
+    statements.push(db.prepare('DELETE FROM analysis_templates WHERE test_id = ?').bind(testId));
+    statements.push(db.prepare('DELETE FROM risk_rules WHERE test_id = ?').bind(testId));
 
+    // Execute deletes
+    if (statements.length > 0) {
+        await db.batch(statements);
+    }
+
+    // 3. Insert scales and get IDs
     const scaleIdMap: Record<string, number> = {};
-
     for (const scale of testDef.scales) {
-        const scaleResult = await db.prepare(`
-      INSERT INTO scales (test_id, name) VALUES (?, ?)
-    `).bind(testId, scale.nameFa).run();
+        const scaleResult = await db.prepare(
+            'INSERT INTO scales (test_id, name) VALUES (?, ?)'
+        ).bind(testId, scale.nameFa).run();
         scaleIdMap[scale.key] = scaleResult.meta.last_row_id as number;
-        result.scalesCreated++;
     }
 
-    // 3. Delete old questions (cascade deletes options and question_scales)
-    await db.prepare('DELETE FROM questions WHERE test_id = ?').bind(testId).run();
-
-    // 4. Sync questions and options
+    // 4. Insert questions, options, and question_scales
     for (const question of testDef.questions) {
-        const questionResult = await db.prepare(`
-      INSERT INTO questions (test_id, text, order_index)
-      VALUES (?, ?, ?)
-    `).bind(testId, question.text, question.order).run();
+        const qResult = await db.prepare(
+            'INSERT INTO questions (test_id, text, order_index) VALUES (?, ?, ?)'
+        ).bind(testId, question.text, question.order).run();
+        const questionId = qResult.meta.last_row_id as number;
 
-        const questionId = questionResult.meta.last_row_id as number;
-        result.questionsCreated++;
-
-        // Link question to scale
+        // Link to scale
         const scaleId = scaleIdMap[question.scaleKey];
         if (scaleId) {
-            await db.prepare(`
-        INSERT INTO question_scales (question_id, scale_id)
-        VALUES (?, ?)
-      `).bind(questionId, scaleId).run();
+            await db.prepare('INSERT INTO question_scales (question_id, scale_id) VALUES (?, ?)').bind(questionId, scaleId).run();
         }
 
-        // Insert options
-        for (let i = 0; i < question.options.length; i++) {
-            const option = question.options[i];
-            await db.prepare(`
-        INSERT INTO options (question_id, text, score, order_index)
-        VALUES (?, ?, ?, ?)
-      `).bind(questionId, option.text, option.score, i).run();
-            result.optionsCreated++;
+        // Insert options in batch
+        const optionStmts = question.options.map((opt, i) =>
+            db.prepare('INSERT INTO options (question_id, text, score, order_index) VALUES (?, ?, ?, ?)').bind(questionId, opt.text, opt.score, i)
+        );
+        if (optionStmts.length > 0) {
+            await db.batch(optionStmts);
         }
     }
 
-    // 5. Sync cutoffs
-    await db.prepare('DELETE FROM cutoffs WHERE scale_id IN (SELECT id FROM scales WHERE test_id = ?)').bind(testId).run();
-
-    for (const cutoff of testDef.cutoffs) {
+    // 5. Insert cutoffs
+    const cutoffStmts = testDef.cutoffs.map(cutoff => {
         const scaleId = scaleIdMap[cutoff.scaleKey];
-        if (scaleId) {
-            await db.prepare(`
-        INSERT INTO cutoffs (scale_id, min_score, max_score, label, description)
-        VALUES (?, ?, ?, ?, ?)
-      `).bind(scaleId, cutoff.min, cutoff.max, cutoff.labelFa, cutoff.label).run();
-            result.cutoffsCreated++;
-        }
+        return db.prepare('INSERT INTO cutoffs (scale_id, min_score, max_score, label, description) VALUES (?, ?, ?, ?, ?)')
+            .bind(scaleId, cutoff.min, cutoff.max, cutoff.labelFa, cutoff.label);
+    }).filter(s => s);
+
+    if (cutoffStmts.length > 0) {
+        await db.batch(cutoffStmts);
     }
 
-    // 6. Sync analysis templates
-    await db.prepare('DELETE FROM analysis_templates WHERE test_id = ?').bind(testId).run();
-
-    for (const template of testDef.analysis_templates) {
+    // 6. Insert analysis templates
+    const templateStmts = testDef.analysis_templates.map(template => {
         const scaleId = scaleIdMap[template.scaleKey] || null;
-        await db.prepare(`
-      INSERT INTO analysis_templates (test_id, scale_id, level_label, title, summary, details, recommendations, disclaimer)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-    `).bind(
-            testId,
-            scaleId,
-            template.level_label,
-            template.title,
-            template.summary,
-            template.details,
-            template.recommendations,
-            template.disclaimer
-        ).run();
-        result.templatesCreated++;
+        return db.prepare('INSERT INTO analysis_templates (test_id, scale_id, level_label, title, summary, details, recommendations, disclaimer) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+            .bind(testId, scaleId, template.level_label, template.title, template.summary, template.details, template.recommendations, template.disclaimer);
+    });
+
+    if (templateStmts.length > 0) {
+        await db.batch(templateStmts);
     }
 
-    // 7. Sync risk rules
-    await db.prepare('DELETE FROM risk_rules WHERE test_id = ?').bind(testId).run();
+    // 7. Insert risk rules
+    const riskStmts = testDef.risk_rules.map(rule =>
+        db.prepare('INSERT INTO risk_rules (test_id, condition_expr, message, severity) VALUES (?, ?, ?, ?)')
+            .bind(testId, rule.condition, rule.message, rule.severity)
+    );
 
-    for (const rule of testDef.risk_rules) {
-        await db.prepare(`
-      INSERT INTO risk_rules (test_id, condition_expr, message, severity)
-      VALUES (?, ?, ?, ?)
-    `).bind(testId, rule.condition, rule.message, rule.severity).run();
-        result.riskRulesCreated++;
+    if (riskStmts.length > 0) {
+        await db.batch(riskStmts);
     }
 }
