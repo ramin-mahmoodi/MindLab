@@ -1,30 +1,12 @@
 // Test Definitions Index
-// Import all test JSON files and export as a single array
+// Only tests with 20+ questions
 
-import phq9 from './phq-9.json';
-import gad7 from './gad-7.json';
-import dass21 from './dass-21.json';
 import bdiII from './bdi-ii.json';
 import bai from './bai.json';
-import pss from './pss.json';
-import isi from './isi.json';
+import dass21 from './dass-21.json';
 import pcl5 from './pcl-5.json';
-import audit from './audit.json';
-import ociR from './oci-r.json';
-import ghq12 from './ghq-12.json';
-import cssrs from './c-ssrs.json';
-import asrs from './asrs.json';
-import mdq from './mdq.json';
 import eat26 from './eat-26.json';
-// New tests
 import stai from './stai.json';
-import lsas from './lsas.json';
-import aq10 from './aq-10.json';
-import epds from './epds.json';
-import cage from './cage.json';
-import dast10 from './dast-10.json';
-import qidsSr from './qids-sr.json';
-import psqi from './psqi.json';
 import scl90r from './scl-90-r.json';
 
 // Type definitions
@@ -90,76 +72,36 @@ export interface TestDefinition {
     risk_rules: RiskRule[];
 }
 
-// Export all test definitions (24 tests total)
+// Export all test definitions (7 tests with 20+ questions)
 export const TEST_DEFINITIONS: TestDefinition[] = [
-    // General Screening
-    ghq12 as TestDefinition,
-    scl90r as TestDefinition,
-
     // Depression
-    phq9 as TestDefinition,
-    bdiII as TestDefinition,
-    qidsSr as TestDefinition,
-    epds as TestDefinition,
+    bdiII as TestDefinition,   // 21 questions
 
     // Anxiety
-    gad7 as TestDefinition,
-    bai as TestDefinition,
-    stai as TestDefinition,
-    lsas as TestDefinition,
+    bai as TestDefinition,     // 21 questions
+    stai as TestDefinition,    // 40 questions (state + trait)
 
-    // Stress
-    pss as TestDefinition,
-    dass21 as TestDefinition,
-
-    // OCD
-    ociR as TestDefinition,
+    // Stress (includes depression & anxiety)
+    dass21 as TestDefinition,  // 21 questions
 
     // PTSD
-    pcl5 as TestDefinition,
-
-    // Bipolar
-    mdq as TestDefinition,
-
-    // ADHD
-    asrs as TestDefinition,
+    pcl5 as TestDefinition,    // 20 questions
 
     // Eating Disorders
-    eat26 as TestDefinition,
+    eat26 as TestDefinition,   // 26 questions
 
-    // Sleep
-    isi as TestDefinition,
-    psqi as TestDefinition,
-
-    // Substance Use
-    audit as TestDefinition,
-    cage as TestDefinition,
-    dast10 as TestDefinition,
-
-    // Autism
-    aq10 as TestDefinition,
-
-    // Suicide / Risk
-    cssrs as TestDefinition,
+    // General Screening
+    scl90r as TestDefinition,  // 90 questions
 ];
 
 // Category definitions for UI
 export const CATEGORIES = [
-    { key: 'General', name: 'General Screening', nameFa: 'غربالگری عمومی', icon: '🔍' },
     { key: 'Depression', name: 'Depression', nameFa: 'افسردگی', icon: '😔' },
     { key: 'Anxiety', name: 'Anxiety', nameFa: 'اضطراب', icon: '😰' },
     { key: 'Stress', name: 'Stress', nameFa: 'استرس', icon: '😤' },
-    { key: 'OCD', name: 'OCD', nameFa: 'وسواس', icon: '🔄' },
     { key: 'PTSD', name: 'PTSD / Trauma', nameFa: 'تروما و PTSD', icon: '💔' },
-    { key: 'Bipolar', name: 'Bipolar / Mania', nameFa: 'دوقطبی / مانیا', icon: '🎭' },
-    { key: 'ADHD', name: 'ADHD', nameFa: 'بیش‌فعالی', icon: '⚡' },
     { key: 'Eating', name: 'Eating Disorders', nameFa: 'اختلالات خوردن', icon: '🍽️' },
-    { key: 'Sleep', name: 'Sleep', nameFa: 'خواب', icon: '😴' },
-    { key: 'Substance', name: 'Substance Use', nameFa: 'مصرف مواد', icon: '🚬' },
-    { key: 'Autism', name: 'Autism Screening', nameFa: 'اوتیسم', icon: '🧩' },
-    { key: 'Suicide', name: 'Suicide / Risk', nameFa: 'خودکشی و ریسک', icon: '⚠️' },
-    { key: 'Child', name: 'Child & Adolescent', nameFa: 'کودک و نوجوان', icon: '👶' },
-    { key: 'QoL', name: 'Quality of Life', nameFa: 'کیفیت زندگی', icon: '✨' },
+    { key: 'General', name: 'General Screening', nameFa: 'غربالگری عمومی', icon: '🔍' },
 ];
 
 // Helper to get tests by category
