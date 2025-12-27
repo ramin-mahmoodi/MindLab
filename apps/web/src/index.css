@@ -427,7 +427,6 @@ a:hover {
 /* Navigation */
 .navbar {
   background: transparent;
-  border-bottom: 1px solid transparent;
   padding: var(--spacing-md) 0;
   position: fixed;
   top: 0;
