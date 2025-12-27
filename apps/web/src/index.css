@@ -234,22 +234,26 @@ a:hover {
 }
 
 /* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  font-weight: 500;
-  border: none;
-  border-radius: var(--radius-lg);
-  cursor: pointer;
-  transition: all var(--transition-normal);
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
+@layer utilities {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
 }
 
 .btn:disabled {
