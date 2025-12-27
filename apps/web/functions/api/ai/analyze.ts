@@ -1,7 +1,8 @@
-// POST /api/ai/analyze - Generate AI-powered psychological analysis
+// POST /api/ai/analyze - Generate AI-powered psychological analysis using REST API
 interface Env {
     DB: D1Database;
-    AI: any; // Cloudflare AI binding
+    CF_ACCOUNT_ID: string;
+    CF_API_TOKEN: string;
 }
 
 interface AuthContext {
@@ -33,11 +34,11 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
             });
         }
 
-        // Check if AI binding is available
-        if (!env.AI) {
+        // Check if API credentials are configured
+        if (!env.CF_ACCOUNT_ID || !env.CF_API_TOKEN) {
             return new Response(JSON.stringify({
                 error: 'AI service not configured',
-                message: 'لطفاً تنظیمات AI را در پنل Cloudflare انجام دهید.'
+                message: 'لطفاً تنظیمات CF_ACCOUNT_ID و CF_API_TOKEN را انجام دهید.'
             }), {
                 status: 503,
                 headers: { 'Content-Type': 'application/json' }
@@ -118,14 +119,37 @@ ${standardAnalysis ? `تحلیل استاندارد: ${standardAnalysis}` : ''}
 
 مهم: پاسخ باید کوتاه (حداکثر 200 کلمه)، گرم و حمایتی باشد. از اصطلاحات پزشکی پیچیده استفاده نکن.`;
 
-        // Call Cloudflare AI
-        const aiResponse = await env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
-            prompt: prompt,
-            max_tokens: 500,
-            temperature: 0.7
-        });
+        // Call Cloudflare AI via REST API
+        const aiResponse = await fetch(
+            `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/ai/run/@cf/meta/llama-3.1-8b-instruct`,
+            {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${env.CF_API_TOKEN}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    prompt: prompt,
+                    max_tokens: 500,
+                    temperature: 0.7
+                })
+            }
+        );
 
-        const aiAnalysis = aiResponse.response || aiResponse.text || 'متأسفانه در حال حاضر امکان تحلیل هوش مصنوعی وجود ندارد.';
+        if (!aiResponse.ok) {
+            const errorText = await aiResponse.text();
+            console.error('AI API error:', errorText);
+            return new Response(JSON.stringify({
+                error: 'AI API request failed',
+                message: 'خطا در ارتباط با سرویس هوش مصنوعی'
+            }), {
+                status: 500,
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+
+        const aiResult = await aiResponse.json() as any;
+        const aiAnalysis = aiResult.result?.response || 'متأسفانه در حال حاضر امکان تحلیل هوش مصنوعی وجود ندارد.';
 
         // Save AI analysis to database
         await env.DB.prepare(`
