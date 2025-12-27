@@ -85,11 +85,15 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
         `).bind(sessionId).first<{ report_json: string }>();
 
         let standardAnalysis = '';
+        let analysisDetails = '';
+        let recommendations = '';
         if (reportResult?.report_json) {
             try {
                 const report = JSON.parse(reportResult.report_json);
                 if (report.analysis?.overall) {
                     standardAnalysis = `${report.analysis.overall.title}: ${report.analysis.overall.summary}`;
+                    analysisDetails = report.analysis.overall.details || '';
+                    recommendations = report.analysis.overall.recommendations || '';
                 }
             } catch { }
         }
@@ -99,25 +103,34 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
             `- ${r.scale_name}: نمره ${r.score} (${r.interpretation})`
         ).join('\n');
 
-        const prompt = `تو یک روان‌شناس بالینی هستی که نتایج یک آزمون روان‌شناختی را تحلیل می‌کنی.
+        const prompt = `تو یک روان‌شناس بالینی ایرانی هستی. لطفاً فقط و فقط به زبان فارسی پاسخ بده. از هیچ کلمه انگلیسی یا زبان دیگری استفاده نکن.
 
-اطلاعات آزمون:
-- نام آزمون: ${session.test_name}
-- دسته‌بندی: ${session.category}
-- نمره کل: ${totalResult?.total || 0}
+اطلاعات آزمون روان‌شناختی:
+نام آزمون: ${session.test_name}
+دسته‌بندی: ${session.category}
+نمره کل: ${totalResult?.total || 0}
 
 نتایج زیرمقیاس‌ها:
-${scaleInfo}
+${scaleInfo || 'اطلاعاتی موجود نیست'}
 
-${standardAnalysis ? `تحلیل استاندارد: ${standardAnalysis}` : ''}
+تفسیر استاندارد: ${standardAnalysis || 'اطلاعاتی موجود نیست'}
 
-لطفاً یک تحلیل شخصی‌سازی‌شده و حمایتی به زبان فارسی ارائه بده که شامل:
-1. توضیح ساده نتایج برای فرد غیرمتخصص
-2. نقاط قوت احتمالی
-3. پیشنهادات عملی برای بهبود (اگر نیاز است)
-4. پیام امیدبخش و حمایتی
+جزئیات تفسیر: ${analysisDetails || 'اطلاعاتی موجود نیست'}
 
-مهم: پاسخ باید کوتاه (حداکثر 200 کلمه)، گرم و حمایتی باشد. از اصطلاحات پزشکی پیچیده استفاده نکن.`;
+توصیه‌های استاندارد: ${recommendations || 'اطلاعاتی موجود نیست'}
+
+لطفاً یک تحلیل شخصی‌سازی‌شده و حمایتی ارائه بده که شامل این موارد باشد:
+۱. توضیح ساده و قابل فهم نتایج
+۲. نقاط قوت فرد بر اساس این نتایج  
+۳. پیشنهادات عملی و کاربردی
+۴. پیام امیدبخش و دلگرم‌کننده
+
+قوانین مهم:
+- فقط به زبان فارسی بنویس
+- از اعداد فارسی استفاده کن (۱، ۲، ۳)
+- حداکثر ۲۰۰ کلمه
+- لحن گرم و حمایتی داشته باش
+- از اصطلاحات پزشکی پیچیده استفاده نکن`;
 
         // Call Cloudflare AI via REST API
         const aiResponse = await fetch(
