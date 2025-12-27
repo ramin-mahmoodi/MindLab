@@ -8,6 +8,11 @@ import pcl5 from './pcl-5.json';
 import eat26 from './eat-26.json';
 import stai from './stai.json';
 import scl90r from './scl-90-r.json';
+import moci from './moci.json';
+import iesR from './ies-r.json';
+import lsas from './lsas.json';
+import cesD from './ces-d.json';
+import whoqolBref from './whoqol-bref.json';
 
 // Type definitions
 export interface TestOption {
@@ -72,26 +77,37 @@ export interface TestDefinition {
     risk_rules: RiskRule[];
 }
 
-// Export all test definitions (7 tests with 20+ questions)
+// Export all test definitions (12 tests with 20+ questions)
 export const TEST_DEFINITIONS: TestDefinition[] = [
     // Depression
-    bdiII as TestDefinition,   // 21 questions
+    bdiII as TestDefinition,    // 21 questions
+    cesD as TestDefinition,     // 20 questions
 
     // Anxiety
-    bai as TestDefinition,     // 21 questions
-    stai as TestDefinition,    // 40 questions (state + trait)
+    bai as TestDefinition,      // 21 questions
+    stai as TestDefinition,     // 40 questions (state + trait)
 
     // Stress (includes depression & anxiety)
-    dass21 as TestDefinition,  // 21 questions
+    dass21 as TestDefinition,   // 21 questions
 
-    // PTSD
-    pcl5 as TestDefinition,    // 20 questions
+    // OCD
+    moci as TestDefinition,     // 30 questions
+
+    // Social Anxiety
+    lsas as TestDefinition,     // 24 questions
+
+    // PTSD / Trauma
+    pcl5 as TestDefinition,     // 20 questions
+    iesR as TestDefinition,     // 22 questions
 
     // Eating Disorders
-    eat26 as TestDefinition,   // 26 questions
+    eat26 as TestDefinition,    // 26 questions
+
+    // Quality of Life
+    whoqolBref as TestDefinition, // 26 questions
 
     // General Screening
-    scl90r as TestDefinition,  // 90 questions
+    scl90r as TestDefinition,   // 90 questions
 ];
 
 // Category definitions for UI
@@ -99,8 +115,11 @@ export const CATEGORIES = [
     { key: 'Depression', name: 'Depression', nameFa: 'افسردگی', icon: '😔' },
     { key: 'Anxiety', name: 'Anxiety', nameFa: 'اضطراب', icon: '😰' },
     { key: 'Stress', name: 'Stress', nameFa: 'استرس', icon: '😤' },
+    { key: 'OCD', name: 'OCD', nameFa: 'وسواس فکری-عملی', icon: '🔄' },
+    { key: 'Social Anxiety', name: 'Social Anxiety', nameFa: 'اضطراب اجتماعی', icon: '👥' },
     { key: 'PTSD', name: 'PTSD / Trauma', nameFa: 'تروما و PTSD', icon: '💔' },
     { key: 'Eating', name: 'Eating Disorders', nameFa: 'اختلالات خوردن', icon: '🍽️' },
+    { key: 'Quality of Life', name: 'Quality of Life', nameFa: 'کیفیت زندگی', icon: '⭐' },
     { key: 'General', name: 'General Screening', nameFa: 'غربالگری عمومی', icon: '🔍' },
 ];
 

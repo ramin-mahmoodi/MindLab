@@ -1,0 +1,545 @@
+{
+    "slug": "moci",
+    "name": "Maudsley Obsessive-Compulsive Inventory",
+    "nameFa": "پرسشنامه وسواس مادزلی (MOCI)",
+    "category": "OCD",
+    "categoryFa": "وسواس فکری-عملی",
+    "description": "A 30-item self-report measure to assess obsessive-compulsive symptoms.",
+    "descriptionFa": "پرسشنامه ۳۰ سوالی برای سنجش علائم وسواس فکری-عملی.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "checking",
+            "name": "Checking",
+            "nameFa": "وارسی"
+        },
+        {
+            "key": "cleaning",
+            "name": "Cleaning",
+            "nameFa": "تمیزی و شستشو"
+        },
+        {
+            "key": "slowness",
+            "name": "Slowness",
+            "nameFa": "کندی"
+        },
+        {
+            "key": "doubting",
+            "name": "Doubting",
+            "nameFa": "تردید"
+        },
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "از اجتناب از استفاده از توالت‌های عمومی به دلیل ترس از آلودگی لذت می‌برم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "معمولاً دستانم بیش از حد خشک می‌شوند چون آنها را زیاد می‌شویم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "زیاد نگران تمیزی و مرتب بودن نیستم.",
+            "scaleKey": "cleaning",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 0
+                },
+                {
+                    "text": "غلط",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "به شدت وجدانی و دقیق هستم.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "زیاد نگران میکروب و بیماری نیستم.",
+            "scaleKey": "cleaning",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 0
+                },
+                {
+                    "text": "غلط",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "بیش از یک بار چیزها را چک می‌کنم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "به مرتب بودن و نظم و ترتیب اهمیت زیادی می‌دهم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "احساس می‌کنم دستانم بعد از لمس پول کثیف می‌شوند.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "معمولاً کارها را چند بار شمارش می‌کنم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "مدت طولانی برای آماده شدن صرف می‌کنم.",
+            "scaleKey": "slowness",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "گاهی مجبورم چیزها را بیش از یک بار بشویم تا مطمئن شوم تمیز هستند.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "قبل از خواب، ذهنم به افکار ناخوشایند مشغول می‌شود.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "قبل از رفتن به رختخواب، چندین بار چیزهای مهم مثل قفل در و اجاق گاز را چک می‌کنم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "معمولاً نامه‌ها را چندین بار قبل از پست کردن چک می‌کنم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "صبح‌ها زمان زیادی برای آماده شدن صرف می‌کنم.",
+            "scaleKey": "slowness",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "مواد ضدعفونی‌کننده و پاک‌کننده زیاد استفاده می‌کنم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "زیاد وقتم را صرف چک کردن چیزها می‌کنم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "لباس‌هایم را هر روز عوض نمی‌کنم.",
+            "scaleKey": "cleaning",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 0
+                },
+                {
+                    "text": "غلط",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "افکار ناخوشایند به ذهنم می‌آیند و نمی‌توانم از شرشان خلاص شوم.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "بعد از اتمام یک کار، به شدت به درستی انجامش شک می‌کنم.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "حتی اگر کاری را با دقت انجام دهم، احساس می‌کنم درست نیست.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "گاهی چندین بار یک چیز را می‌شویم چون احساس می‌کنم هنوز کثیف است.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "اعداد خاصی برایم مهم هستند.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "بعضی وقت‌ها باید چیزها را به تعداد مشخصی بشمارم.",
+            "scaleKey": "checking",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 25,
+            "text": "معمولاً در انجام کارها کند هستم چون می‌خواهم همه چیز درست باشد.",
+            "scaleKey": "slowness",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 26,
+            "text": "بعد از لمس کردن حیوانات، احساس می‌کنم باید دستانم را بشویم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 27,
+            "text": "معمولاً نگران این هستم که کار اشتباهی کرده باشم.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 28,
+            "text": "وقتی کاری اشتباه پیش می‌رود، احساس می‌کنم تقصیر من است.",
+            "scaleKey": "doubting",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 29,
+            "text": "معمولاً در تصمیم‌گیری کند هستم چون مطمئن نیستم.",
+            "scaleKey": "slowness",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        },
+        {
+            "order": 30,
+            "text": "گاهی مجبورم بارها دست بشویم یا تمیز کنم.",
+            "scaleKey": "cleaning",
+            "options": [
+                {
+                    "text": "صحیح",
+                    "score": 1
+                },
+                {
+                    "text": "غلط",
+                    "score": 0
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 10,
+            "label": "Normal",
+            "labelFa": "طبیعی"
+        },
+        {
+            "scaleKey": "total",
+            "min": 11,
+            "max": 17,
+            "label": "Mild",
+            "labelFa": "خفیف"
+        },
+        {
+            "scaleKey": "total",
+            "min": 18,
+            "max": 23,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "total",
+            "min": 24,
+            "max": 30,
+            "label": "Severe",
+            "labelFa": "شدید"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "total",
+            "title": "علائم وسواس در محدوده طبیعی",
+            "summary": "نمره شما نشان‌دهنده عدم وجود علائم وسواس قابل توجه است.",
+            "details": "شما در محدوده طبیعی قرار دارید.",
+            "recommendations": "ادامه سبک زندگی سالم.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe",
+            "scaleKey": "total",
+            "title": "علائم وسواس شدید",
+            "summary": "نمره شما نشان‌دهنده علائم وسواس شدید است.",
+            "details": "این نیاز به مداخله تخصصی دارد.",
+            "recommendations": "لطفاً با روان‌پزشک یا روان‌شناس بالینی مشورت کنید.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

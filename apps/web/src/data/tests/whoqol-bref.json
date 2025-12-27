@@ -1,0 +1,790 @@
+{
+    "slug": "whoqol-bref",
+    "name": "WHO Quality of Life-BREF",
+    "nameFa": "پرسشنامه کیفیت زندگی سازمان جهانی بهداشت (WHOQOL-BREF)",
+    "category": "Quality of Life",
+    "categoryFa": "کیفیت زندگی",
+    "description": "A 26-item self-report measure assessing quality of life across physical, psychological, social, and environmental domains.",
+    "descriptionFa": "پرسشنامه ۲۶ سوالی برای سنجش کیفیت زندگی در ابعاد جسمانی، روان‌شناختی، اجتماعی و محیطی.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 12,
+    "scales": [
+        {
+            "key": "physical",
+            "name": "Physical Health",
+            "nameFa": "سلامت جسمانی"
+        },
+        {
+            "key": "psychological",
+            "name": "Psychological Health",
+            "nameFa": "سلامت روان"
+        },
+        {
+            "key": "social",
+            "name": "Social Relationships",
+            "nameFa": "روابط اجتماعی"
+        },
+        {
+            "key": "environment",
+            "name": "Environment",
+            "nameFa": "محیط"
+        },
+        {
+            "key": "overall",
+            "name": "Overall QoL",
+            "nameFa": "کیفیت زندگی کلی"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "کیفیت زندگی خود را چگونه ارزیابی می‌کنید؟",
+            "scaleKey": "overall",
+            "options": [
+                {
+                    "text": "خیلی بد",
+                    "score": 1
+                },
+                {
+                    "text": "بد",
+                    "score": 2
+                },
+                {
+                    "text": "نه خوب نه بد",
+                    "score": 3
+                },
+                {
+                    "text": "خوب",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی خوب",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "چقدر از سلامت خود راضی هستید؟",
+            "scaleKey": "overall",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "چقدر درد جسمانی مانع انجام کارهایتان می‌شود؟",
+            "scaleKey": "physical",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 5
+                },
+                {
+                    "text": "کم",
+                    "score": 4
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "چقدر به درمان پزشکی برای عملکرد روزانه نیاز دارید؟",
+            "scaleKey": "physical",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 5
+                },
+                {
+                    "text": "کم",
+                    "score": 4
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 2
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "چقدر از زندگی لذت می‌برید؟",
+            "scaleKey": "psychological",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "چقدر احساس می‌کنید زندگی‌تان معنادار است؟",
+            "scaleKey": "psychological",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "چقدر می‌توانید تمرکز کنید؟",
+            "scaleKey": "psychological",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "چقدر در زندگی روزمره احساس امنیت می‌کنید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "محیط فیزیکی شما چقدر سالم است؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "آیا انرژی کافی برای زندگی روزمره دارید؟",
+            "scaleKey": "physical",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "آیا ظاهر جسمانی خود را قبول دارید؟",
+            "scaleKey": "psychological",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "آیا پول کافی برای نیازهایتان دارید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "اطلاعات مورد نیاز روزانه چقدر در دسترس شماست؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "چقدر فرصت فعالیت‌های تفریحی دارید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 1
+                },
+                {
+                    "text": "کم",
+                    "score": 2
+                },
+                {
+                    "text": "متوسط",
+                    "score": 3
+                },
+                {
+                    "text": "زیاد",
+                    "score": 4
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "چقدر توانایی حرکت و جابجایی دارید؟",
+            "scaleKey": "physical",
+            "options": [
+                {
+                    "text": "خیلی بد",
+                    "score": 1
+                },
+                {
+                    "text": "بد",
+                    "score": 2
+                },
+                {
+                    "text": "نه خوب نه بد",
+                    "score": 3
+                },
+                {
+                    "text": "خوب",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی خوب",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "چقدر از خواب خود راضی هستید؟",
+            "scaleKey": "physical",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "چقدر از توانایی انجام فعالیت‌های روزانه راضی هستید؟",
+            "scaleKey": "physical",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "چقدر از توانایی کاری خود راضی هستید؟",
+            "scaleKey": "physical",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "چقدر از خودتان راضی هستید؟",
+            "scaleKey": "psychological",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "چقدر از روابط شخصی خود راضی هستید؟",
+            "scaleKey": "social",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "چقدر از زندگی جنسی خود راضی هستید؟",
+            "scaleKey": "social",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "چقدر از حمایت دوستانتان راضی هستید؟",
+            "scaleKey": "social",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "چقدر از شرایط محل زندگی خود راضی هستید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "چقدر از دسترسی به خدمات بهداشتی راضی هستید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 25,
+            "text": "چقدر از وسیله نقلیه خود راضی هستید؟",
+            "scaleKey": "environment",
+            "options": [
+                {
+                    "text": "خیلی ناراضی",
+                    "score": 1
+                },
+                {
+                    "text": "ناراضی",
+                    "score": 2
+                },
+                {
+                    "text": "نه راضی نه ناراضی",
+                    "score": 3
+                },
+                {
+                    "text": "راضی",
+                    "score": 4
+                },
+                {
+                    "text": "خیلی راضی",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 26,
+            "text": "چقدر احساسات منفی مثل غم، ناامیدی، اضطراب و افسردگی دارید؟",
+            "scaleKey": "psychological",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 5
+                },
+                {
+                    "text": "به ندرت",
+                    "score": 4
+                },
+                {
+                    "text": "اغلب",
+                    "score": 3
+                },
+                {
+                    "text": "خیلی وقت‌ها",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 1
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "overall",
+            "min": 2,
+            "max": 4,
+            "label": "Poor",
+            "labelFa": "کیفیت زندگی ضعیف"
+        },
+        {
+            "scaleKey": "overall",
+            "min": 5,
+            "max": 7,
+            "label": "Moderate",
+            "labelFa": "کیفیت زندگی متوسط"
+        },
+        {
+            "scaleKey": "overall",
+            "min": 8,
+            "max": 10,
+            "label": "Good",
+            "labelFa": "کیفیت زندگی خوب"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Poor",
+            "scaleKey": "overall",
+            "title": "کیفیت زندگی ضعیف",
+            "summary": "نمره شما نشان‌دهنده کیفیت زندگی پایین است.",
+            "details": "ممکن است در چندین حوزه نیاز به بهبود داشته باشید.",
+            "recommendations": "ارزیابی توسط متخصص برای شناسایی حوزه‌های نیازمند بهبود توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Good",
+            "scaleKey": "overall",
+            "title": "کیفیت زندگی خوب",
+            "summary": "نمره شما نشان‌دهنده کیفیت زندگی خوب است.",
+            "details": "شما در اکثر حوزه‌ها رضایت دارید.",
+            "recommendations": "ادامه فعالیت‌های سالم.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

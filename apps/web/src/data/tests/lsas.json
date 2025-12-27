@@ -1,0 +1,634 @@
+{
+    "slug": "lsas",
+    "name": "Liebowitz Social Anxiety Scale",
+    "nameFa": "مقیاس اضطراب اجتماعی لیبوویتز (LSAS)",
+    "category": "Social Anxiety",
+    "categoryFa": "اضطراب اجتماعی",
+    "description": "A 24-item measure assessing fear and avoidance in social and performance situations.",
+    "descriptionFa": "پرسشنامه ۲۴ سوالی برای سنجش ترس و اجتناب در موقعیت‌های اجتماعی و عملکردی.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 15,
+    "scales": [
+        {
+            "key": "fear",
+            "name": "Fear/Anxiety",
+            "nameFa": "ترس/اضطراب"
+        },
+        {
+            "key": "avoidance",
+            "name": "Avoidance",
+            "nameFa": "اجتناب"
+        },
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "تلفن زدن در حضور دیگران - چقدر از این موقعیت می‌ترسید یا اضطراب دارید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "شرکت در یک گروه کوچک - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "غذا خوردن در مکان‌های عمومی - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "نوشیدن در حضور دیگران - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "صحبت با افراد صاحب اختیار - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "اجرا یا سخنرانی در حضور جمع - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "رفتن به یک مهمانی - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "کار کردن در حضور دیگران - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "نوشتن در حضور دیگران - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "تماس تلفنی با کسی که نمی‌شناسید - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "صحبت با افراد ناآشنا - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "ملاقات با افراد ناآشنا - چقدر از این موقعیت می‌ترسید؟",
+            "scaleKey": "fear",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "شدید",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "تلفن زدن در حضور دیگران - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "شرکت در یک گروه کوچک - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "غذا خوردن در مکان‌های عمومی - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "نوشیدن در حضور دیگران - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "صحبت با افراد صاحب اختیار - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "اجرا یا سخنرانی در حضور جمع - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "رفتن به یک مهمانی - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "کار کردن در حضور دیگران - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "نوشتن در حضور دیگران - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "تماس تلفنی با کسی که نمی‌شناسید - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "صحبت با افراد ناآشنا - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "ملاقات با افراد ناآشنا - چقدر از این موقعیت اجتناب می‌کنید؟",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "گاهی",
+                    "score": 1
+                },
+                {
+                    "text": "اغلب",
+                    "score": 2
+                },
+                {
+                    "text": "همیشه",
+                    "score": 3
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 29,
+            "label": "Normal",
+            "labelFa": "طبیعی"
+        },
+        {
+            "scaleKey": "total",
+            "min": 30,
+            "max": 59,
+            "label": "Mild Social Anxiety",
+            "labelFa": "اضطراب اجتماعی خفیف"
+        },
+        {
+            "scaleKey": "total",
+            "min": 60,
+            "max": 89,
+            "label": "Moderate Social Anxiety",
+            "labelFa": "اضطراب اجتماعی متوسط"
+        },
+        {
+            "scaleKey": "total",
+            "min": 90,
+            "max": 144,
+            "label": "Severe Social Anxiety",
+            "labelFa": "اضطراب اجتماعی شدید"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "total",
+            "title": "بدون اضطراب اجتماعی قابل توجه",
+            "summary": "نمره شما نشان‌دهنده عدم وجود اضطراب اجتماعی بالینی است.",
+            "details": "شما در موقعیت‌های اجتماعی راحت هستید.",
+            "recommendations": "ادامه فعالیت‌های اجتماعی.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Severe Social Anxiety",
+            "scaleKey": "total",
+            "title": "اضطراب اجتماعی شدید",
+            "summary": "نمره شما نشان‌دهنده اضطراب اجتماعی شدید است.",
+            "details": "این می‌تواند به طور قابل توجهی بر زندگی روزمره تأثیر بگذارد.",
+            "recommendations": "مشاوره با روان‌پزشک یا روان‌شناس متخصص در اضطراب اجتماعی توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

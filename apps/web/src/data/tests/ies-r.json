@@ -1,0 +1,674 @@
+{
+    "slug": "ies-r",
+    "name": "Impact of Event Scale-Revised",
+    "nameFa": "مقیاس تأثیر رویداد تجدیدنظرشده (IES-R)",
+    "category": "PTSD",
+    "categoryFa": "تروما و PTSD",
+    "description": "A 22-item self-report measure assessing distress caused by traumatic events.",
+    "descriptionFa": "پرسشنامه ۲۲ سوالی برای سنجش پریشانی ناشی از رویدادهای آسیب‌زا در هفته گذشته.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "intrusion",
+            "name": "Intrusion",
+            "nameFa": "افکار مزاحم"
+        },
+        {
+            "key": "avoidance",
+            "name": "Avoidance",
+            "nameFa": "اجتناب"
+        },
+        {
+            "key": "hyperarousal",
+            "name": "Hyperarousal",
+            "nameFa": "بیش‌برانگیختگی"
+        },
+        {
+            "key": "total",
+            "name": "Total Score",
+            "nameFa": "نمره کل"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "در هفته گذشته، هر چیزی که رویداد را یادآوری می‌کند، احساسات مربوط به آن را زنده می‌کند.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "در هفته گذشته، مشکل خوابیدن داشتم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "در هفته گذشته، چیزهای دیگر باعث می‌شوند به رویداد فکر کنم.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "در هفته گذشته، تحریک‌پذیر و عصبانی بودم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "در هفته گذشته، از ناراحت شدن هنگام فکر کردن یا یادآوری رویداد اجتناب کردم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "در هفته گذشته، بدون اینکه بخواهم به رویداد فکر کردم.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "در هفته گذشته، احساس کردم رویداد اتفاق نیفتاده یا واقعی نبوده.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "در هفته گذشته، از یادآورهای رویداد دوری کردم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "در هفته گذشته، تصاویر رویداد ناگهان به ذهنم آمدند.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "در هفته گذشته، آشفته و به‌راحتی جا می‌خوردم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "در هفته گذشته، سعی کردم به رویداد فکر نکنم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "در هفته گذشته، می‌دانستم که هنوز احساسات زیادی درباره رویداد دارم، اما با آنها کنار نیامدم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "در هفته گذشته، احساساتم درباره رویداد نوعی بی‌حسی بود.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "در هفته گذشته، متوجه شدم که طوری عمل یا احساس می‌کنم که انگار در زمان رویداد هستم.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "در هفته گذشته، مشکل به خواب رفتن داشتم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "در هفته گذشته، موج‌هایی از احساسات شدید درباره رویداد تجربه کردم.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "در هفته گذشته، سعی کردم رویداد را از حافظه‌ام پاک کنم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "در هفته گذشته، مشکل تمرکز داشتم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "در هفته گذشته، یادآورهای رویداد باعث واکنش‌های فیزیکی (عرق کردن، تنگی نفس، حالت تهوع، تپش قلب) شدند.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "در هفته گذشته، درباره رویداد خواب دیدم.",
+            "scaleKey": "intrusion",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "در هفته گذشته، احساس کردم که مراقب و هوشیار هستم.",
+            "scaleKey": "hyperarousal",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "در هفته گذشته، سعی کردم درباره رویداد صحبت نکنم.",
+            "scaleKey": "avoidance",
+            "options": [
+                {
+                    "text": "اصلاً",
+                    "score": 0
+                },
+                {
+                    "text": "کمی",
+                    "score": 1
+                },
+                {
+                    "text": "متوسط",
+                    "score": 2
+                },
+                {
+                    "text": "زیاد",
+                    "score": 3
+                },
+                {
+                    "text": "بسیار زیاد",
+                    "score": 4
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "total",
+            "min": 0,
+            "max": 23,
+            "label": "Normal",
+            "labelFa": "طبیعی"
+        },
+        {
+            "scaleKey": "total",
+            "min": 24,
+            "max": 32,
+            "label": "Partial PTSD",
+            "labelFa": "PTSD ناقص"
+        },
+        {
+            "scaleKey": "total",
+            "min": 33,
+            "max": 88,
+            "label": "Probable PTSD",
+            "labelFa": "احتمال PTSD"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Normal",
+            "scaleKey": "total",
+            "title": "پاسخ طبیعی به استرس",
+            "summary": "نمره شما نشان‌دهنده پاسخ طبیعی به رویداد استرس‌زاست.",
+            "details": "شما علائم PTSD قابل توجهی ندارید.",
+            "recommendations": "ادامه استفاده از منابع حمایتی.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Probable PTSD",
+            "scaleKey": "total",
+            "title": "احتمال PTSD",
+            "summary": "نمره شما نشان‌دهنده علائم قابل توجه PTSD است.",
+            "details": "این نیاز به ارزیابی تخصصی دارد.",
+            "recommendations": "لطفاً با روان‌پزشک یا روان‌شناس متخصص تروما مشورت کنید.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}
