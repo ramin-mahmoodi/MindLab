@@ -144,7 +144,7 @@ body::before {
   justify-content: center;
   text-align: center;
   padding: var(--spacing-3xl) var(--spacing-lg);
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 .hero-bg {
