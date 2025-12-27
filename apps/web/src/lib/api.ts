@@ -191,3 +191,8 @@ export async function adminImport(data: any): Promise<{ success: boolean; result
 export async function adminExport(): Promise<any> {
     return apiCall('/admin/export');
 }
+
+// AI Analysis
+export async function getAiAnalysis(sessionId: number): Promise<{ success: boolean; analysis: string; model: string }> {
+    return apiCall('/ai/analyze', { method: 'POST', body: { sessionId } });
+}

@@ -6,3 +6,6 @@ pages_build_output_dir = "apps/web/dist"
 binding = "DB"
 database_name = "mindlab-db"
 database_id = "98983811-bf04-441a-a2ef-90ec9f84bfca"
+
+[ai]
+binding = "AI"

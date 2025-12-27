@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getSessionDetail, SessionDetail } from '../lib/api';
+import { getSessionDetail, SessionDetail, getAiAnalysis } from '../lib/api';
 import { useLanguage } from '../components/LanguageContext';
 
 interface AnalysisSection {
@@ -48,6 +48,9 @@ export default function ResultDetail() {
     const [report, setReport] = useState<ResultReport | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [aiAnalysis, setAiAnalysis] = useState<string | null>(null);
+    const [aiLoading, setAiLoading] = useState(false);
+    const [aiError, setAiError] = useState('');
 
     useEffect(() => {
         loadSession();
@@ -74,6 +77,23 @@ export default function ResultDetail() {
             console.error(err);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const handleGetAiAnalysis = async () => {
+        if (!id || aiLoading) return;
+
+        setAiLoading(true);
+        setAiError('');
+
+        try {
+            const result = await getAiAnalysis(parseInt(id));
+            setAiAnalysis(result.analysis);
+        } catch (err: any) {
+            setAiError(language === 'fa' ? 'خطا در دریافت تحلیل هوش مصنوعی' : 'Error getting AI analysis');
+            console.error(err);
+        } finally {
+            setAiLoading(false);
         }
     };
 
@@ -228,6 +248,65 @@ export default function ResultDetail() {
                     )}
                 </section>
             )}
+
+            {/* AI Analysis Section */}
+            <section style={{ marginBottom: '2rem' }}>
+                <div className="card" style={{
+                    background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%)',
+                    border: '1px solid rgba(139, 92, 246, 0.3)'
+                }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                        <span style={{ fontSize: '1.5rem' }}>🤖</span>
+                        <h3 style={{ margin: 0 }}>
+                            {language === 'fa' ? 'تحلیل هوش مصنوعی' : 'AI Analysis'}
+                        </h3>
+                    </div>
+
+                    {!aiAnalysis && !aiLoading && (
+                        <div style={{ textAlign: 'center' }}>
+                            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+                                {language === 'fa'
+                                    ? 'دریافت تحلیل شخصی‌سازی‌شده از هوش مصنوعی'
+                                    : 'Get personalized AI-powered analysis'}
+                            </p>
+                            <button
+                                onClick={handleGetAiAnalysis}
+                                className="btn btn-primary"
+                                disabled={aiLoading}
+                                style={{
+                                    background: 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)',
+                                    border: 'none'
+                                }}
+                            >
+                                ✨ {language === 'fa' ? 'دریافت تحلیل AI' : 'Get AI Analysis'}
+                            </button>
+                            {aiError && (
+                                <p style={{ color: 'var(--color-error)', marginTop: '0.5rem' }}>{aiError}</p>
+                            )}
+                        </div>
+                    )}
+
+                    {aiLoading && (
+                        <div style={{ textAlign: 'center', padding: '2rem' }}>
+                            <div className="spinner" style={{ margin: '0 auto 1rem' }}></div>
+                            <p style={{ color: 'var(--color-text-secondary)' }}>
+                                {language === 'fa' ? 'در حال تحلیل...' : 'Analyzing...'}
+                            </p>
+                        </div>
+                    )}
+
+                    {aiAnalysis && (
+                        <div style={{
+                            lineHeight: 1.8,
+                            whiteSpace: 'pre-wrap',
+                            direction: 'rtl',
+                            textAlign: 'right'
+                        }}>
+                            {aiAnalysis}
+                        </div>
+                    )}
+                </div>
+            </section>
 
             {/* Disclaimer */}
             <div className="alert alert-info" style={{ marginTop: '2rem' }}>
