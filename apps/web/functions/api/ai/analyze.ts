@@ -12,18 +12,6 @@ interface AnalyzeRequest {
     sessionId: number;
 }
 
-interface TestResult {
-    testName: string;
-    category: string;
-    totalScore: number;
-    scales: {
-        name: string;
-        score: number;
-        level: string;
-    }[];
-    standardAnalysis?: string;
-}
-
 export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ request, env, data }) => {
     const uid = data.uid;
 
