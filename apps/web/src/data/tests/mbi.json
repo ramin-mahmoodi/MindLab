@@ -800,96 +800,123 @@
     ],
     "cutoffs": [
         {
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "min": 0,
             "max": 16,
             "label": "Low",
-            "labelFa": "پایین"
+            "labelFa": "خستگی هیجانی پایین"
         },
         {
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "min": 17,
             "max": 26,
             "label": "Moderate",
-            "labelFa": "متوسط"
+            "labelFa": "خستگی هیجانی متوسط"
         },
         {
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "min": 27,
             "max": 54,
             "label": "High",
-            "labelFa": "بالا"
+            "labelFa": "خستگی هیجانی بالا"
         },
         {
             "scaleKey": "depersonalization",
             "min": 0,
             "max": 6,
             "label": "Low",
-            "labelFa": "پایین"
+            "labelFa": "مسخ شخصیت پایین"
         },
         {
             "scaleKey": "depersonalization",
             "min": 7,
             "max": 12,
             "label": "Moderate",
-            "labelFa": "متوسط"
+            "labelFa": "مسخ شخصیت متوسط"
         },
         {
             "scaleKey": "depersonalization",
             "min": 13,
             "max": 30,
             "label": "High",
-            "labelFa": "بالا"
+            "labelFa": "مسخ شخصیت بالا"
         },
         {
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "min": 0,
             "max": 31,
             "label": "Low",
-            "labelFa": "پایین"
+            "labelFa": "موفقیت فردی پایین (فرسودگی بالا)"
         },
         {
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "min": 32,
             "max": 38,
             "label": "Moderate",
-            "labelFa": "متوسط"
+            "labelFa": "موفقیت فردی متوسط"
         },
         {
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "min": 39,
             "max": 48,
             "label": "High",
-            "labelFa": "بالا"
+            "labelFa": "موفقیت فردی بالا (فرسودگی پایین)"
         }
     ],
     "analysis_templates": [
         {
+            "level_label": "Low",
+            "scaleKey": "emotional_exhaustion",
+            "title": "خستگی هیجانی پایین",
+            "summary": "نمره خستگی هیجانی شما در سطح پایین است.",
+            "details": "شما انرژی هیجانی خوبی برای کارتان دارید.",
+            "recommendations": "• حفظ تعادل کار و زندگی",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
             "level_label": "High",
-            "scaleKey": "exhaustion",
-            "title": "خستگی عاطفی بالا",
-            "summary": "شما سطح بالایی از خستگی عاطفی شغلی تجربه می‌کنید.",
-            "details": "این نشان‌دهنده فرسودگی شغلی است.",
-            "recommendations": "استراحت، مرخصی و مشاوره با متخصص توصیه می‌شود.",
+            "scaleKey": "emotional_exhaustion",
+            "title": "خستگی هیجانی بالا",
+            "summary": "نمره خستگی هیجانی شما نشان‌دهنده خستگی شدید شغلی است.",
+            "details": "احساس تخلیه و خستگی از کار می‌کنید که نشانه فرسودگی است.",
+            "recommendations": "• استراحت کافی\n• مشاوره با متخصص بهداشت شغلی\n• بازنگری در حجم کار",
+            "disclaimer": "توجه جدی به بازسازی انرژی ضروری است."
+        },
+        {
+            "level_label": "Low",
+            "scaleKey": "depersonalization",
+            "title": "مسخ شخصیت پایین",
+            "summary": "نمره مسخ شخصیت شما پایین است.",
+            "details": "شما هنوز ارتباط خوبی با ارباب‌رجوع/همکاران دارید.",
+            "recommendations": "• حفظ روابط مثبت کاری",
             "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
         },
         {
             "level_label": "High",
             "scaleKey": "depersonalization",
             "title": "مسخ شخصیت بالا",
-            "summary": "شما نسبت به دیگران بی‌تفاوت شده‌اید.",
-            "details": "این نشانه فرسودگی شغلی است.",
-            "recommendations": "بازسازی روابط کاری و استراحت.",
+            "summary": "نمره مسخ شخصیت شما نشان‌دهنده فاصله‌گرفتن هیجانی از کار است.",
+            "details": "ممکن است احساس بی‌تفاوتی یا منفی نسبت به دیگران داشته باشید.",
+            "recommendations": "• بازنگری در نگرش کاری\n• مشاوره با روان‌شناس صنعتی-سازمانی",
+            "disclaimer": "این وضعیت نیاز به توجه دارد."
+        },
+        {
+            "level_label": "High",
+            "scaleKey": "personal_accomplishment",
+            "title": "موفقیت فردی بالا",
+            "summary": "نمره موفقیت فردی شما نشان‌دهنده رضایت شغلی خوب است.",
+            "details": "شما احساس می‌کنید کارتان ارزشمند و مؤثر است.",
+            "recommendations": "• ادامه رویکرد مثبت فعلی",
             "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
         },
         {
             "level_label": "Low",
-            "scaleKey": "accomplishment",
-            "title": "احساس موفقیت پایین",
-            "summary": "شما از کارتان رضایت ندارید.",
-            "details": "این احساس عدم موفقیت فردی است.",
-            "recommendations": "بازنگری در اهداف شغلی و مشاوره.",
-            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+            "scaleKey": "personal_accomplishment",
+            "title": "موفقیت فردی پایین (فرسودگی بالا)",
+            "summary": "نمره موفقیت فردی پایین شما نشان‌دهنده کاهش رضایت شغلی است.",
+            "details": "احساس می‌کنید کارتان بی‌ارزش است یا تأثیری ندارد.",
+            "recommendations": "• شناسایی دستاوردهای کاری\n• مشاوره شغلی\n• بازنگری در اهداف حرفه‌ای",
+            "disclaimer": "این وضعیت نیاز به توجه و مداخله دارد."
         }
     ],
     "risk_rules": []
