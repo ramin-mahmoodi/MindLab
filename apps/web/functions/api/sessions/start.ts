@@ -44,13 +44,38 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
             });
         }
 
-        // Create session
-        const result = await env.DB.prepare(`
-      INSERT INTO sessions (test_id, user_uid)
-      VALUES (?, ?)
-    `).bind(testId, uid).run();
+        // Check for existing unfinished session for this test and user
+        const existingSession = await env.DB.prepare(`
+      SELECT id FROM sessions 
+      WHERE test_id = ? AND user_uid = ? AND finished_at IS NULL
+      ORDER BY started_at DESC
+      LIMIT 1
+    `).bind(testId, uid).first();
 
-        const sessionId = result.meta.last_row_id;
+        let sessionId: number;
+        let existingAnswers: Record<number, number> = {};
+
+        if (existingSession) {
+            // Resume existing session
+            sessionId = existingSession.id as number;
+
+            // Get existing answers
+            const { results: answers } = await env.DB.prepare(`
+        SELECT question_id, option_id FROM answers WHERE session_id = ?
+      `).bind(sessionId).all();
+
+            for (const answer of answers as any[]) {
+                existingAnswers[answer.question_id] = answer.option_id;
+            }
+        } else {
+            // Create new session
+            const result = await env.DB.prepare(`
+        INSERT INTO sessions (test_id, user_uid)
+        VALUES (?, ?)
+      `).bind(testId, uid).run();
+
+            sessionId = result.meta.last_row_id as number;
+        }
 
         // Get test with questions for the session
         const { results: questions } = await env.DB.prepare(`
@@ -95,9 +120,11 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
 
         return new Response(JSON.stringify({
             sessionId,
-            questions: questionsWithOptions
+            questions: questionsWithOptions,
+            existingAnswers,
+            resumed: !!existingSession
         }), {
-            status: 201,
+            status: existingSession ? 200 : 201,
             headers: { 'Content-Type': 'application/json' }
         });
     } catch (error) {

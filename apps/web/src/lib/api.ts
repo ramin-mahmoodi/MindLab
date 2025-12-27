@@ -131,7 +131,12 @@ export async function getTest(id: number): Promise<{ test: Test & { questions: Q
 }
 
 // User API
-export async function startSession(testId: number): Promise<{ sessionId: number; questions: Question[] }> {
+export async function startSession(testId: number): Promise<{
+    sessionId: number;
+    questions: Question[];
+    existingAnswers?: Record<number, number>;
+    resumed?: boolean;
+}> {
     return apiCall('/sessions/start', { method: 'POST', body: { testId } });
 }
 

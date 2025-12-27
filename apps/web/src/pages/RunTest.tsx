@@ -49,6 +49,24 @@ export default function RunTest() {
             if (result.questions.length > 0) {
                 setQuestions(result.questions);
             }
+
+            // Restore existing answers if resuming session
+            if (result.existingAnswers && Object.keys(result.existingAnswers).length > 0) {
+                setAnswers(result.existingAnswers);
+
+                // Find first unanswered question
+                const answeredIds = new Set(Object.keys(result.existingAnswers).map(Number));
+                const firstUnansweredIndex = result.questions.findIndex(
+                    (q: { id: number }) => !answeredIds.has(q.id)
+                );
+                if (firstUnansweredIndex >= 0) {
+                    setCurrentQuestionIndex(firstUnansweredIndex);
+                } else {
+                    // All questions answered, go to last question
+                    setCurrentQuestionIndex(result.questions.length - 1);
+                }
+            }
+
             setShowWarning(false);
         } catch (err) {
             setError('خطا در شروع تست');
