@@ -125,7 +125,7 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
             </nav>
 
-            <main className="page">
+            <main className={`page ${location.pathname === '/' ? 'page-no-padding' : ''}`}>
                 {children}
             </main>
 

@@ -111,6 +111,13 @@ body::before {
 .page {
   flex: 1;
   position: relative;
+  padding-top: 6rem;
+  /* Space for fixed navbar */
+}
+
+/* Remove padding for pages with hero section */
+.page-no-padding {
+  padding-top: 0;
 }
 
 /* Hero gradient glow at the top */
