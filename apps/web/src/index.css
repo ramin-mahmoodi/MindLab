@@ -750,7 +750,7 @@ a:hover {
 /* Page layout */
 .page {
   flex: 1;
-  padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
   position: relative;
 }
 
