@@ -1,5 +1,5 @@
 // Test Definitions Index
-// Only tests with 20+ questions
+// All tests have 20+ questions
 
 import bdiII from './bdi-ii.json';
 import bai from './bai.json';
@@ -13,6 +13,9 @@ import iesR from './ies-r.json';
 import lsas from './lsas.json';
 import cesD from './ces-d.json';
 import whoqolBref from './whoqol-bref.json';
+import mbi from './mbi.json';
+import enrich from './enrich.json';
+import cdRisc from './cd-risc.json';
 
 // Type definitions
 export interface TestOption {
@@ -77,7 +80,7 @@ export interface TestDefinition {
     risk_rules: RiskRule[];
 }
 
-// Export all test definitions (12 tests with 20+ questions)
+// Export all test definitions (16 tests with 20+ questions)
 export const TEST_DEFINITIONS: TestDefinition[] = [
     // Depression
     bdiII as TestDefinition,    // 21 questions
@@ -87,7 +90,7 @@ export const TEST_DEFINITIONS: TestDefinition[] = [
     bai as TestDefinition,      // 21 questions
     stai as TestDefinition,     // 40 questions (state + trait)
 
-    // Stress (includes depression & anxiety)
+    // Stress
     dass21 as TestDefinition,   // 21 questions
 
     // OCD
@@ -106,6 +109,15 @@ export const TEST_DEFINITIONS: TestDefinition[] = [
     // Quality of Life
     whoqolBref as TestDefinition, // 26 questions
 
+    // Burnout
+    mbi as TestDefinition,      // 22 questions
+
+    // Relationships
+    enrich as TestDefinition,   // 35 questions
+
+    // Resilience
+    cdRisc as TestDefinition,   // 25 questions
+
     // General Screening
     scl90r as TestDefinition,   // 90 questions
 ];
@@ -120,6 +132,9 @@ export const CATEGORIES = [
     { key: 'PTSD', name: 'PTSD / Trauma', nameFa: 'تروما و PTSD', icon: '💔' },
     { key: 'Eating', name: 'Eating Disorders', nameFa: 'اختلالات خوردن', icon: '🍽️' },
     { key: 'Quality of Life', name: 'Quality of Life', nameFa: 'کیفیت زندگی', icon: '⭐' },
+    { key: 'Burnout', name: 'Job Burnout', nameFa: 'فرسودگی شغلی', icon: '🔥' },
+    { key: 'Relationships', name: 'Relationships', nameFa: 'روابط زناشویی', icon: '💑' },
+    { key: 'Resilience', name: 'Resilience', nameFa: 'تاب‌آوری', icon: '💪' },
     { key: 'General', name: 'General Screening', nameFa: 'غربالگری عمومی', icon: '🔍' },
 ];
 

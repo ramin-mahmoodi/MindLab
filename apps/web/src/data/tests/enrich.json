@@ -1,0 +1,1035 @@
+{
+    "slug": "enrich",
+    "name": "ENRICH Marital Satisfaction",
+    "nameFa": "پرسشنامه رضایت زناشویی انریچ",
+    "category": "Relationships",
+    "categoryFa": "روابط زناشویی",
+    "description": "A 35-item measure assessing marital satisfaction across multiple dimensions.",
+    "descriptionFa": "پرسشنامه ۳۵ سوالی برای سنجش رضایت زناشویی در ابعاد مختلف: ارتباطات، حل تعارض و رضایت کلی.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 15,
+    "scales": [
+        {
+            "key": "idealistic",
+            "name": "Idealistic Distortion",
+            "nameFa": "تحریف آرمانی"
+        },
+        {
+            "key": "satisfaction",
+            "name": "Marital Satisfaction",
+            "nameFa": "رضایت زناشویی"
+        },
+        {
+            "key": "communication",
+            "name": "Communication",
+            "nameFa": "ارتباطات"
+        },
+        {
+            "key": "conflict",
+            "name": "Conflict Resolution",
+            "nameFa": "حل تعارض"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "زمانی که درباره مسائل با همسرم بحث می‌کنم، او درک می‌کند که من چه احساسی دارم.",
+            "scaleKey": "communication",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "از نحوه تقسیم مسئولیت‌ها در خانواده‌مان راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "همسرم گاهی اوقات به حرف‌هایم گوش نمی‌دهد.",
+            "scaleKey": "communication",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "رابطه ما دقیقاً همانی است که می‌خواستم باشد.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "از میزان محبت در رابطه‌مان ناراضی هستم.",
+            "scaleKey": "satisfaction",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "وقتی اختلاف نظر داریم، می‌توانیم به راحتی مصالحه کنیم.",
+            "scaleKey": "conflict",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "همسرم کاملاً صادق و قابل اعتماد است.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "گاهی از نحوه صحبت کردن همسرم با من ناراحت می‌شوم.",
+            "scaleKey": "communication",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "ما همیشه به طور عادلانه با یکدیگر رفتار می‌کنیم.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "از رابطه جنسی‌مان راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "بحث‌های ما معمولاً به دعوا تبدیل می‌شود.",
+            "scaleKey": "conflict",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "همسرم همیشه احساسات مرا درک می‌کند.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "از میزان صمیمیت در رابطه‌مان خوشحالم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "می‌توانم درباره هر چیزی با همسرم صحبت کنم.",
+            "scaleKey": "communication",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "گاهی همسرم حرف‌های تند به من می‌زند.",
+            "scaleKey": "conflict",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "ما هیچ‌وقت دعوا نمی‌کنیم.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "از نحوه مدیریت مالی‌مان راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "همسرم گاهی از بحث کردن طفره می‌رود.",
+            "scaleKey": "conflict",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "احساس می‌کنم همسرم مرا کاملاً می‌شناسد.",
+            "scaleKey": "communication",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "همسرم همه نیازهای عاطفی مرا برآورده می‌کند.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "از وقتی که با هم می‌گذرانیم راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "وقتی دعوا می‌کنیم، یکی از ما قهر می‌کند.",
+            "scaleKey": "conflict",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 23,
+            "text": "گاهی از صحبت کردن با همسرم می‌ترسم.",
+            "scaleKey": "communication",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 24,
+            "text": "همسرم هرگز مرا ناامید نمی‌کند.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 25,
+            "text": "از رابطه‌مان با خانواده‌های یکدیگر راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 26,
+            "text": "می‌توانیم اختلافات‌مان را بدون عصبانیت حل کنیم.",
+            "scaleKey": "conflict",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 27,
+            "text": "همسرم همیشه حق با اوست یا فکر می‌کند حق با اوست.",
+            "scaleKey": "conflict",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 28,
+            "text": "ازدواج ما بی‌نقص است.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 29,
+            "text": "همسرم واقعاً به حرف‌هایم گوش می‌دهد.",
+            "scaleKey": "communication",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 30,
+            "text": "از کیفیت کلی رابطه‌مان راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 31,
+            "text": "بعد از دعوا، به راحتی آشتی می‌کنیم.",
+            "scaleKey": "conflict",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 32,
+            "text": "گاهی احساس می‌کنم همسرم مرا نمی‌فهمد.",
+            "scaleKey": "communication",
+            "reverse": true,
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 5
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 4
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 2
+                },
+                {
+                    "text": "موافقم",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "order": 33,
+            "text": "ما هرگز با هم مشکلی نداریم.",
+            "scaleKey": "idealistic",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 34,
+            "text": "از تصمیم‌گیری‌های مشترک‌مان راضی هستم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        },
+        {
+            "order": 35,
+            "text": "به طور کلی از ازدواجم خوشحالم.",
+            "scaleKey": "satisfaction",
+            "options": [
+                {
+                    "text": "کاملاً مخالفم",
+                    "score": 1
+                },
+                {
+                    "text": "مخالفم",
+                    "score": 2
+                },
+                {
+                    "text": "تا حدودی مخالفم",
+                    "score": 3
+                },
+                {
+                    "text": "تا حدودی موافقم",
+                    "score": 4
+                },
+                {
+                    "text": "موافقم",
+                    "score": 5
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "satisfaction",
+            "min": 10,
+            "max": 25,
+            "label": "Low",
+            "labelFa": "رضایت پایین"
+        },
+        {
+            "scaleKey": "satisfaction",
+            "min": 26,
+            "max": 35,
+            "label": "Moderate",
+            "labelFa": "رضایت متوسط"
+        },
+        {
+            "scaleKey": "satisfaction",
+            "min": 36,
+            "max": 50,
+            "label": "High",
+            "labelFa": "رضایت بالا"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "Low",
+            "scaleKey": "satisfaction",
+            "title": "رضایت زناشویی پایین",
+            "summary": "نمره شما نشان‌دهنده رضایت پایین از زندگی زناشویی است.",
+            "details": "ممکن است نیاز به توجه بیشتر به رابطه داشته باشید.",
+            "recommendations": "مشاوره زناشویی توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "High",
+            "scaleKey": "satisfaction",
+            "title": "رضایت زناشویی بالا",
+            "summary": "نمره شما نشان‌دهنده رضایت بالا از زندگی زناشویی است.",
+            "details": "شما از رابطه‌تان راضی هستید.",
+            "recommendations": "ادامه ارتباط سالم.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}

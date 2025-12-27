@@ -1,0 +1,896 @@
+{
+    "slug": "mbi",
+    "name": "Maslach Burnout Inventory",
+    "nameFa": "پرسشنامه فرسودگی شغلی مسلش (MBI)",
+    "category": "Burnout",
+    "categoryFa": "فرسودگی شغلی",
+    "description": "A 22-item measure assessing job burnout across three dimensions.",
+    "descriptionFa": "پرسشنامه ۲۲ سوالی برای سنجش فرسودگی شغلی در سه بعد: خستگی عاطفی، مسخ شخصیت و کاهش موفقیت فردی.",
+    "analysis_type": "profile",
+    "warning": "این تست صرفاً غربالگری است و جایگزین ارزیابی تخصصی نیست.",
+    "timeMinutes": 10,
+    "scales": [
+        {
+            "key": "exhaustion",
+            "name": "Emotional Exhaustion",
+            "nameFa": "خستگی عاطفی"
+        },
+        {
+            "key": "depersonalization",
+            "name": "Depersonalization",
+            "nameFa": "مسخ شخصیت"
+        },
+        {
+            "key": "accomplishment",
+            "name": "Personal Accomplishment",
+            "nameFa": "موفقیت فردی"
+        }
+    ],
+    "questions": [
+        {
+            "order": 1,
+            "text": "از کار کردن احساس تخلیه شدن عاطفی می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "text": "در پایان روز کاری احساس درماندگی می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 3,
+            "text": "صبح‌ها وقتی بیدار می‌شوم و باید با یک روز کاری دیگر روبرو شوم، احساس خستگی می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 4,
+            "text": "به راحتی می‌توانم بفهمم ارباب‌رجوع‌هایم درباره چیزی چه احساسی دارند.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 5,
+            "text": "احساس می‌کنم با برخی ارباب‌رجوع‌ها مثل یک شیء برخورد می‌کنم.",
+            "scaleKey": "depersonalization",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 6,
+            "text": "کار کردن با مردم تمام روز واقعاً برایم فشار است.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 7,
+            "text": "به طور موثر با مشکلات ارباب‌رجوع‌هایم برخورد می‌کنم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 8,
+            "text": "از کارم احساس فرسودگی می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 9,
+            "text": "احساس می‌کنم از طریق کارم بر زندگی دیگران تأثیر مثبت می‌گذارم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 10,
+            "text": "از زمانی که این شغل را گرفتم، نسبت به مردم بی‌تفاوت‌تر شدم.",
+            "scaleKey": "depersonalization",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 11,
+            "text": "نگرانم که این شغل مرا از نظر عاطفی سخت کرده است.",
+            "scaleKey": "depersonalization",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 12,
+            "text": "احساس پرانرژی بودن می‌کنم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 13,
+            "text": "از کارم احساس ناامیدی می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 14,
+            "text": "احساس می‌کنم در کارم خیلی سخت کار می‌کنم.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 15,
+            "text": "واقعاً برایم مهم نیست که برخی ارباب‌رجوع‌ها چه اتفاقی برایشان می‌افتد.",
+            "scaleKey": "depersonalization",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 16,
+            "text": "کار مستقیم با مردم استرس زیادی به من وارد می‌کند.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 17,
+            "text": "به راحتی می‌توانم جو آرامی برای ارباب‌رجوع‌هایم ایجاد کنم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 18,
+            "text": "بعد از کار نزدیک با ارباب‌رجوع‌ها، احساس سرزندگی و نشاط می‌کنم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 19,
+            "text": "در این شغل چیزهای ارزشمند زیادی به دست آورده‌ام.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 20,
+            "text": "احساس می‌کنم به آخر خط رسیده‌ام.",
+            "scaleKey": "exhaustion",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 21,
+            "text": "در کارم با مسائل عاطفی به آرامی برخورد می‌کنم.",
+            "scaleKey": "accomplishment",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        },
+        {
+            "order": 22,
+            "text": "احساس می‌کنم ارباب‌رجوع‌ها مرا مسئول برخی مشکلاتشان می‌دانند.",
+            "scaleKey": "depersonalization",
+            "options": [
+                {
+                    "text": "هرگز",
+                    "score": 0
+                },
+                {
+                    "text": "یکبار در سال",
+                    "score": 1
+                },
+                {
+                    "text": "ماهی یکبار",
+                    "score": 2
+                },
+                {
+                    "text": "چند بار در ماه",
+                    "score": 3
+                },
+                {
+                    "text": "هفته‌ای یکبار",
+                    "score": 4
+                },
+                {
+                    "text": "چند بار در هفته",
+                    "score": 5
+                },
+                {
+                    "text": "هر روز",
+                    "score": 6
+                }
+            ]
+        }
+    ],
+    "cutoffs": [
+        {
+            "scaleKey": "exhaustion",
+            "min": 0,
+            "max": 16,
+            "label": "Low",
+            "labelFa": "پایین"
+        },
+        {
+            "scaleKey": "exhaustion",
+            "min": 17,
+            "max": 26,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "exhaustion",
+            "min": 27,
+            "max": 54,
+            "label": "High",
+            "labelFa": "بالا"
+        },
+        {
+            "scaleKey": "depersonalization",
+            "min": 0,
+            "max": 6,
+            "label": "Low",
+            "labelFa": "پایین"
+        },
+        {
+            "scaleKey": "depersonalization",
+            "min": 7,
+            "max": 12,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "depersonalization",
+            "min": 13,
+            "max": 30,
+            "label": "High",
+            "labelFa": "بالا"
+        },
+        {
+            "scaleKey": "accomplishment",
+            "min": 0,
+            "max": 31,
+            "label": "Low",
+            "labelFa": "پایین"
+        },
+        {
+            "scaleKey": "accomplishment",
+            "min": 32,
+            "max": 38,
+            "label": "Moderate",
+            "labelFa": "متوسط"
+        },
+        {
+            "scaleKey": "accomplishment",
+            "min": 39,
+            "max": 48,
+            "label": "High",
+            "labelFa": "بالا"
+        }
+    ],
+    "analysis_templates": [
+        {
+            "level_label": "High",
+            "scaleKey": "exhaustion",
+            "title": "خستگی عاطفی بالا",
+            "summary": "شما سطح بالایی از خستگی عاطفی شغلی تجربه می‌کنید.",
+            "details": "این نشان‌دهنده فرسودگی شغلی است.",
+            "recommendations": "استراحت، مرخصی و مشاوره با متخصص توصیه می‌شود.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "High",
+            "scaleKey": "depersonalization",
+            "title": "مسخ شخصیت بالا",
+            "summary": "شما نسبت به دیگران بی‌تفاوت شده‌اید.",
+            "details": "این نشانه فرسودگی شغلی است.",
+            "recommendations": "بازسازی روابط کاری و استراحت.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        },
+        {
+            "level_label": "Low",
+            "scaleKey": "accomplishment",
+            "title": "احساس موفقیت پایین",
+            "summary": "شما از کارتان رضایت ندارید.",
+            "details": "این احساس عدم موفقیت فردی است.",
+            "recommendations": "بازنگری در اهداف شغلی و مشاوره.",
+            "disclaimer": "این نتیجه جایگزین ارزیابی تخصصی نیست."
+        }
+    ],
+    "risk_rules": []
+}
