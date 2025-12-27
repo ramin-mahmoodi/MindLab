@@ -388,6 +388,7 @@ a:hover {
   font-weight: 700;
   color: var(--color-text);
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: var(--spacing-sm);
   transition: all var(--transition-fast);
@@ -397,13 +398,33 @@ a:hover {
   transform: scale(1.02);
 }
 
-.navbar-brand .brand-icon {
-  font-size: 1.75rem;
-  filter: drop-shadow(0 0 10px rgba(45, 212, 191, 0.5));
+.navbar-brand .brand-icon-wrapper {
+  position: relative;
 }
 
-.navbar-brand .brand-highlight {
+.navbar-brand .brand-icon {
+  width: 2rem;
+  height: 2rem;
   color: var(--color-primary);
+  filter: drop-shadow(0 0 10px rgba(45, 212, 191, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon {
+  transform: scale(1.1);
+}
+
+.navbar-brand .brand-icon-glow {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 212, 191, 0.3);
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon-glow {
+  opacity: 1;
 }
 
 .navbar-nav {

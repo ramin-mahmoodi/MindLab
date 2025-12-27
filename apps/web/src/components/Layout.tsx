@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { Brain } from 'lucide-react';
 import { useAuth } from './AuthContext';
 import { useLanguage } from './LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -24,7 +25,10 @@ export default function Layout({ children }: LayoutProps) {
             <nav className="navbar">
                 <div className="container navbar-content">
                     <Link to="/" className="navbar-brand">
-                        <span className="brand-icon">🧠</span>
+                        <div className="relative brand-icon-wrapper">
+                            <Brain className="brand-icon" />
+                            <div className="brand-icon-glow" />
+                        </div>
                         <span>Mind<span className="brand-highlight">Lab</span></span>
                     </Link>
 
