@@ -5,7 +5,7 @@ export default function Home() {
     const { t, language } = useLanguage();
 
     return (
-        <div className="container">
+        <>
             {/* Hero Section with Background Effects */}
             <section className="hero">
                 {/* Background Effects */}
@@ -97,75 +97,77 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Features Section */}
-            <section style={{ marginTop: '4rem' }}>
-                <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>
-                    {language === 'fa' ? (
-                        <>چرا <span className="gradient-text">آزمایشگاه ذهن</span>؟</>
-                    ) : (
-                        <>Why Choose <span className="gradient-text">MindLab</span>?</>
-                    )}
-                </h2>
-                <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 2rem' }}>
-                    {language === 'fa'
-                        ? 'تست‌های روان‌شناسی حرفه‌ای بر اساس تحقیقات علمی معتبر'
-                        : 'Professional psychological assessments based on validated research'
-                    }
-                </p>
+            <div className="container">
+                {/* Features Section */}
+                <section style={{ marginTop: '4rem' }}>
+                    <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>
+                        {language === 'fa' ? (
+                            <>چرا <span className="gradient-text">آزمایشگاه ذهن</span>؟</>
+                        ) : (
+                            <>Why Choose <span className="gradient-text">MindLab</span>?</>
+                        )}
+                    </h2>
+                    <p style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 2rem' }}>
+                        {language === 'fa'
+                            ? 'تست‌های روان‌شناسی حرفه‌ای بر اساس تحقیقات علمی معتبر'
+                            : 'Professional psychological assessments based on validated research'
+                        }
+                    </p>
 
-                <div className="grid grid-3">
-                    <div className="card">
-                        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🧪</div>
-                        <h3>{t('home.features.scientific')}</h3>
-                        <p>{t('home.features.scientific.desc')}</p>
-                    </div>
+                    <div className="grid grid-3">
+                        <div className="card">
+                            <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🧪</div>
+                            <h3>{t('home.features.scientific')}</h3>
+                            <p>{t('home.features.scientific.desc')}</p>
+                        </div>
 
-                    <div className="card">
-                        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔒</div>
-                        <h3>{t('home.features.private')}</h3>
-                        <p>{t('home.features.private.desc')}</p>
-                    </div>
+                        <div className="card">
+                            <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🔒</div>
+                            <h3>{t('home.features.private')}</h3>
+                            <p>{t('home.features.private.desc')}</p>
+                        </div>
 
-                    <div className="card">
-                        <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📊</div>
-                        <h3>{t('home.features.instant')}</h3>
-                        <p>{t('home.features.instant.desc')}</p>
+                        <div className="card">
+                            <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📊</div>
+                            <h3>{t('home.features.instant')}</h3>
+                            <p>{t('home.features.instant.desc')}</p>
+                        </div>
                     </div>
+                </section>
+
+                {/* CTA Section */}
+                <section style={{
+                    marginTop: '4rem',
+                    textAlign: 'center',
+                    padding: '3rem',
+                    background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.1), rgba(167, 139, 250, 0.1))',
+                    borderRadius: 'var(--radius-xl)',
+                    border: '1px solid var(--color-border)'
+                }}>
+                    <h2>
+                        {language === 'fa' ? (
+                            <>آماده کشف <span className="gradient-text">روان‌شناسی</span> خود هستید؟</>
+                        ) : (
+                            <>Ready to Discover Your <span className="gradient-text">Psychology</span>?</>
+                        )}
+                    </h2>
+                    <p style={{ maxWidth: '500px', margin: '0 auto 1.5rem' }}>
+                        {language === 'fa'
+                            ? 'به هزاران کاربری بپیوندید که درباره سلامت روان خود آگاهی پیدا کرده‌اند'
+                            : 'Join thousands of users who have gained insights about their mental health'
+                        }
+                    </p>
+                    <Link to="/tests" className="btn btn-primary btn-large">
+                        {t('home.cta')} →
+                    </Link>
+                </section>
+
+                {/* Disclaimer */}
+                <div className="alert alert-warning" style={{ marginTop: '3rem' }}>
+                    <span className="alert-icon">⚠️</span>
+                    <span>{t('tests.disclaimer')}</span>
                 </div>
-            </section>
-
-            {/* CTA Section */}
-            <section style={{
-                marginTop: '4rem',
-                textAlign: 'center',
-                padding: '3rem',
-                background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.1), rgba(167, 139, 250, 0.1))',
-                borderRadius: 'var(--radius-xl)',
-                border: '1px solid var(--color-border)'
-            }}>
-                <h2>
-                    {language === 'fa' ? (
-                        <>آماده کشف <span className="gradient-text">روان‌شناسی</span> خود هستید؟</>
-                    ) : (
-                        <>Ready to Discover Your <span className="gradient-text">Psychology</span>?</>
-                    )}
-                </h2>
-                <p style={{ maxWidth: '500px', margin: '0 auto 1.5rem' }}>
-                    {language === 'fa'
-                        ? 'به هزاران کاربری بپیوندید که درباره سلامت روان خود آگاهی پیدا کرده‌اند'
-                        : 'Join thousands of users who have gained insights about their mental health'
-                    }
-                </p>
-                <Link to="/tests" className="btn btn-primary btn-large">
-                    {t('home.cta')} →
-                </Link>
-            </section>
-
-            {/* Disclaimer */}
-            <div className="alert alert-warning" style={{ marginTop: '3rem' }}>
-                <span className="alert-icon">⚠️</span>
-                <span>{t('tests.disclaimer')}</span>
             </div>
-        </div>
+        </>
     );
 }
