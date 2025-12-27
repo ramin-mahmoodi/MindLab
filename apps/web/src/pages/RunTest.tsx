@@ -52,7 +52,12 @@ export default function RunTest() {
 
             // Restore existing answers if resuming session
             if (result.existingAnswers && Object.keys(result.existingAnswers).length > 0) {
-                setAnswers(result.existingAnswers);
+                // Convert string keys to numbers (backend returns string keys from JSON)
+                const convertedAnswers: Record<number, number> = {};
+                for (const [key, value] of Object.entries(result.existingAnswers)) {
+                    convertedAnswers[Number(key)] = value as number;
+                }
+                setAnswers(convertedAnswers);
 
                 // Find first unanswered question
                 const answeredIds = new Set(Object.keys(result.existingAnswers).map(Number));
