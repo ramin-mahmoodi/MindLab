@@ -110,8 +110,6 @@ body::before {
 /* Main page content */
 .page {
   flex: 1;
-  padding-top: 5rem;
-  /* Space for fixed navbar */
   position: relative;
 }
 
