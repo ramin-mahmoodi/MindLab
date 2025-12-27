@@ -59,20 +59,32 @@ export default function RunTest() {
     };
 
     const handleSelectOption = async (optionId: number) => {
-        if (!sessionId) return;
+        if (!sessionId || submitting) return;
 
         const currentQuestion = questions[currentQuestionIndex];
+
+        // Optimistically update UI
         setAnswers(prev => ({ ...prev, [currentQuestion.id]: optionId }));
 
         try {
+            setSubmitting(true);
             await submitAnswer(sessionId, currentQuestion.id, optionId);
 
+            // Only advance after successful submission
             if (currentQuestionIndex < questions.length - 1) {
                 setCurrentQuestionIndex(prev => prev + 1);
             }
         } catch (err) {
-            setError('خطا در ثبت پاسخ');
+            // Revert on error
+            setAnswers(prev => {
+                const newAnswers = { ...prev };
+                delete newAnswers[currentQuestion.id];
+                return newAnswers;
+            });
+            setError('خطا در ثبت پاسخ - لطفاً دوباره تلاش کنید');
             console.error(err);
+        } finally {
+            setSubmitting(false);
         }
     };
 
