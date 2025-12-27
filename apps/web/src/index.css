@@ -107,6 +107,29 @@ body::before {
   flex-direction: column;
 }
 
+/* Main page content */
+.page {
+  flex: 1;
+  padding-top: 5rem;
+  /* Space for fixed navbar */
+  position: relative;
+}
+
+/* Hero gradient glow at the top */
+.page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(45, 212, 191, 0.15), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* Persian text */
 .persian {
   font-family: var(--font-persian);
