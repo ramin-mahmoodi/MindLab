@@ -322,13 +322,15 @@ a:hover {
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-lg);
   display: flex;
-  flex-direction: row-reverse;
   align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--spacing-md);
   backdrop-filter: blur(10px);
   direction: rtl;
   text-align: right;
+}
+
+.alert>*:last-child {
+  flex: 1;
 }
 
 .alert-warning {
