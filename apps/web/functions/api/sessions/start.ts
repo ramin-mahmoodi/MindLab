@@ -55,7 +55,7 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
         WHERE test_id = ? AND user_uid = ? AND finished_at IS NULL
         ORDER BY started_at DESC
         LIMIT 1
-      `).bind(testId, uid).first<{ id: number }>();
+      `).bind(testId, uid).first() as { id: number } | null;
 
             if (existingSession && existingSession.id) {
                 // Resume existing session
@@ -65,7 +65,7 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
                 // Get existing answers
                 const { results: answers } = await env.DB.prepare(`
           SELECT question_id, option_id FROM answers WHERE session_id = ?
-        `).bind(sessionId).all<{ question_id: number; option_id: number }>();
+        `).bind(sessionId).all() as { results: { question_id: number; option_id: number }[] };
 
                 for (const answer of answers) {
                     existingAnswers[String(answer.question_id)] = answer.option_id;
