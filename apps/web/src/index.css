@@ -325,6 +325,8 @@ a:hover {
   align-items: flex-start;
   gap: var(--spacing-md);
   backdrop-filter: blur(10px);
+  direction: rtl;
+  text-align: right;
 }
 
 .alert-warning {
