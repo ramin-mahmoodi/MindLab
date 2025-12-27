@@ -162,7 +162,9 @@ export default function RunTest() {
         const currentQuestion = questions[currentQuestionIndex];
         const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
         const isLastQuestion = currentQuestionIndex === questions.length - 1;
-        const allAnswered = Object.keys(answers).length === questions.length;
+        const currentAnswered = answers[currentQuestion.id] !== undefined;
+        // Show finish when on last question and current question is answered
+        const canFinish = isLastQuestion && currentAnswered;
 
         return (
             <div className="container" style={{ maxWidth: '700px' }}>
@@ -206,7 +208,7 @@ export default function RunTest() {
                             → قبلی
                         </button>
 
-                        {isLastQuestion && allAnswered ? (
+                        {canFinish ? (
                             <button
                                 onClick={handleFinish}
                                 className="btn btn-primary btn-large"
