@@ -22,19 +22,37 @@ async function apiCall<T>(endpoint: string, options: ApiOptions = {}): Promise<T
         }
     }
 
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-        method,
-        headers,
-        body: body ? JSON.stringify(body) : undefined
-    });
+    // Retry logic for transient errors
+    const maxRetries = 3;
+    let lastError: Error | null = null;
 
-    const data = await response.json();
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+            const response = await fetch(`${API_BASE}${endpoint}`, {
+                method,
+                headers,
+                body: body ? JSON.stringify(body) : undefined
+            });
 
-    if (!response.ok) {
-        throw new Error(data.error || 'API request failed');
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'API request failed');
+            }
+
+            return data;
+        } catch (error) {
+            lastError = error as Error;
+            console.error(`API call attempt ${attempt} failed:`, error);
+
+            // Only retry on network errors, not on 4xx errors
+            if (attempt < maxRetries) {
+                await new Promise(resolve => setTimeout(resolve, 500 * attempt));
+            }
+        }
     }
 
-    return data;
+    throw lastError || new Error('API request failed after retries');
 }
 
 // Types
