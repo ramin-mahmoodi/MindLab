@@ -34,6 +34,11 @@
             "key": "overall",
             "name": "Overall QoL",
             "nameFa": "کیفیت زندگی کلی"
+        },
+        {
+            "key": "total",
+            "name": "Total",
+            "nameFa": "نمره کل"
         }
     ],
     "questions": [

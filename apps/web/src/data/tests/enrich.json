@@ -29,6 +29,11 @@
             "key": "conflict",
             "name": "Conflict Resolution",
             "nameFa": "حل تعارض"
+        },
+        {
+            "key": "total",
+            "name": "Total",
+            "nameFa": "نمره کل"
         }
     ],
     "questions": [

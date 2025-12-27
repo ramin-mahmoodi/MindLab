@@ -11,9 +11,9 @@
     "timeMinutes": 10,
     "scales": [
         {
-            "key": "exhaustion",
+            "key": "emotional_exhaustion",
             "name": "Emotional Exhaustion",
-            "nameFa": "خستگی عاطفی"
+            "nameFa": "خستگی هیجانی"
         },
         {
             "key": "depersonalization",
@@ -21,7 +21,7 @@
             "nameFa": "مسخ شخصیت"
         },
         {
-            "key": "accomplishment",
+            "key": "personal_accomplishment",
             "name": "Personal Accomplishment",
             "nameFa": "موفقیت فردی"
         }
@@ -30,7 +30,7 @@
         {
             "order": 1,
             "text": "از کار کردن احساس تخلیه شدن عاطفی می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -65,7 +65,7 @@
         {
             "order": 2,
             "text": "در پایان روز کاری احساس درماندگی می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -100,7 +100,7 @@
         {
             "order": 3,
             "text": "صبح‌ها وقتی بیدار می‌شوم و باید با یک روز کاری دیگر روبرو شوم، احساس خستگی می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -135,7 +135,7 @@
         {
             "order": 4,
             "text": "به راحتی می‌توانم بفهمم ارباب‌رجوع‌هایم درباره چیزی چه احساسی دارند.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -205,7 +205,7 @@
         {
             "order": 6,
             "text": "کار کردن با مردم تمام روز واقعاً برایم فشار است.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -240,7 +240,7 @@
         {
             "order": 7,
             "text": "به طور موثر با مشکلات ارباب‌رجوع‌هایم برخورد می‌کنم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -275,7 +275,7 @@
         {
             "order": 8,
             "text": "از کارم احساس فرسودگی می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -310,7 +310,7 @@
         {
             "order": 9,
             "text": "احساس می‌کنم از طریق کارم بر زندگی دیگران تأثیر مثبت می‌گذارم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -415,7 +415,7 @@
         {
             "order": 12,
             "text": "احساس پرانرژی بودن می‌کنم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -450,7 +450,7 @@
         {
             "order": 13,
             "text": "از کارم احساس ناامیدی می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -485,7 +485,7 @@
         {
             "order": 14,
             "text": "احساس می‌کنم در کارم خیلی سخت کار می‌کنم.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -555,7 +555,7 @@
         {
             "order": 16,
             "text": "کار مستقیم با مردم استرس زیادی به من وارد می‌کند.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -590,7 +590,7 @@
         {
             "order": 17,
             "text": "به راحتی می‌توانم جو آرامی برای ارباب‌رجوع‌هایم ایجاد کنم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -625,7 +625,7 @@
         {
             "order": 18,
             "text": "بعد از کار نزدیک با ارباب‌رجوع‌ها، احساس سرزندگی و نشاط می‌کنم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -660,7 +660,7 @@
         {
             "order": 19,
             "text": "در این شغل چیزهای ارزشمند زیادی به دست آورده‌ام.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
@@ -695,7 +695,7 @@
         {
             "order": 20,
             "text": "احساس می‌کنم به آخر خط رسیده‌ام.",
-            "scaleKey": "exhaustion",
+            "scaleKey": "emotional_exhaustion",
             "options": [
                 {
                     "text": "هرگز",
@@ -730,7 +730,7 @@
         {
             "order": 21,
             "text": "در کارم با مسائل عاطفی به آرامی برخورد می‌کنم.",
-            "scaleKey": "accomplishment",
+            "scaleKey": "personal_accomplishment",
             "options": [
                 {
                     "text": "هرگز",
