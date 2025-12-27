@@ -53,7 +53,7 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
             const existingSession = await env.DB.prepare(`
         SELECT id FROM sessions 
         WHERE test_id = ? AND user_uid = ? AND finished_at IS NULL
-        ORDER BY started_at DESC
+        ORDER BY created_at DESC
         LIMIT 1
       `).bind(testId, uid).first() as { id: number } | null;
 
