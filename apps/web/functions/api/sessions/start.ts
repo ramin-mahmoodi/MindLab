@@ -45,36 +45,48 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
         }
 
         // Check for existing unfinished session for this test and user
-        const existingSession = await env.DB.prepare(`
-      SELECT id FROM sessions 
-      WHERE test_id = ? AND user_uid = ? AND finished_at IS NULL
-      ORDER BY started_at DESC
-      LIMIT 1
-    `).bind(testId, uid).first();
-
         let sessionId: number;
-        let existingAnswers: Record<number, number> = {};
+        let existingAnswers: Record<string, number> = {};
+        let resumed = false;
 
-        if (existingSession) {
-            // Resume existing session
-            sessionId = existingSession.id as number;
+        try {
+            const existingSession = await env.DB.prepare(`
+        SELECT id FROM sessions 
+        WHERE test_id = ? AND user_uid = ? AND finished_at IS NULL
+        ORDER BY started_at DESC
+        LIMIT 1
+      `).bind(testId, uid).first<{ id: number }>();
 
-            // Get existing answers
-            const { results: answers } = await env.DB.prepare(`
-        SELECT question_id, option_id FROM answers WHERE session_id = ?
-      `).bind(sessionId).all();
+            if (existingSession && existingSession.id) {
+                // Resume existing session
+                sessionId = existingSession.id;
+                resumed = true;
 
-            for (const answer of answers as any[]) {
-                existingAnswers[answer.question_id] = answer.option_id;
+                // Get existing answers
+                const { results: answers } = await env.DB.prepare(`
+          SELECT question_id, option_id FROM answers WHERE session_id = ?
+        `).bind(sessionId).all<{ question_id: number; option_id: number }>();
+
+                for (const answer of answers) {
+                    existingAnswers[String(answer.question_id)] = answer.option_id;
+                }
+            } else {
+                // Create new session
+                const result = await env.DB.prepare(`
+          INSERT INTO sessions (test_id, user_uid)
+          VALUES (?, ?)
+        `).bind(testId, uid).run();
+
+                sessionId = Number(result.meta.last_row_id);
             }
-        } else {
-            // Create new session
+        } catch (sessionError) {
+            console.error('Session creation/resume error:', sessionError);
+            // Fallback: always create new session
             const result = await env.DB.prepare(`
         INSERT INTO sessions (test_id, user_uid)
         VALUES (?, ?)
       `).bind(testId, uid).run();
-
-            sessionId = result.meta.last_row_id as number;
+            sessionId = Number(result.meta.last_row_id);
         }
 
         // Get test with questions for the session
@@ -122,9 +134,9 @@ export const onRequestPost: PagesFunction<Env, string, AuthContext> = async ({ r
             sessionId,
             questions: questionsWithOptions,
             existingAnswers,
-            resumed: !!existingSession
+            resumed
         }), {
-            status: existingSession ? 200 : 201,
+            status: resumed ? 200 : 201,
             headers: { 'Content-Type': 'application/json' }
         });
     } catch (error) {
